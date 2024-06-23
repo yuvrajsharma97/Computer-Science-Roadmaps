@@ -1,0 +1,57 @@
+.landingpageDark{
+    background: #000428;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #000000, #232526);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #000000, #232526); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+            
+    
+    background-size: 500% 500%;
+    background-position: 500%;
+    animation: gradientdark 20s ease infinite;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    
+}
+
+.landingpageLight{
+    background: #000428;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #E0EAFC, #CFDEF3);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #E0EAFC, #CFDEF3); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+            
+    
+    background-size: 500% 500%;
+    background-position: 500%;
+    animation: gradientlight 20s ease infinite;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: black;
+    
+}
+
+@keyframes gradientdark{
+    0% {
+        background-position: 0%;
+    }
+    50% {
+        background-position: 100%;
+    }
+    100% {
+        background-position: 0%;
+    }
+}
+
+@keyframes gradientlight{
+    0% {
+        background-position: 0%;
+    }
+    50% {
+        background-position: 100%;
+    }
+    100% {
+        background-position: 0%;
+    }
+}

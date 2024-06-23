@@ -1,8 +1,11 @@
+import { AppContextWrapper } from "@/context/appcontextwrapper";
 import "./globals.css";
+import Navbar from "@/components/navbar/navbar";
 
 export const metadata = {
   title: "Computer Science Roadmaps",
-  description: "Developed by Yuvraj Sharma, Computer Science Roadmaps is a collection of resources to help begginers choose the right path in computer science.",
+  description:
+    "Developed by Yuvraj Sharma, Computer Science Roadmaps is a collection of resources to help begginers choose the right path in computer science.",
 };
 
 export default function RootLayout({ children }) {
@@ -20,7 +23,13 @@ export default function RootLayout({ children }) {
           rel="stylesheet"
         />
       </head>
-      <body>{children}</body>
+
+      <body>
+        <AppContextWrapper>
+          <Navbar />
+          {children}
+          </AppContextWrapper>
+      </body>
     </html>
   );
 }
