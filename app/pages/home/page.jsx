@@ -1,6 +1,6 @@
 'use client';
 import React, { useContext } from "react";
-import "./home.css";
+import "../style/pages.css";
 import { AppContext } from "@/context/appcontextwrapper";
 
 const HomePage = () => {
@@ -8,10 +8,7 @@ const HomePage = () => {
   return (
     <React.Fragment>
       <div className={themeModeDark ? "landingpageDark" : "landingpageLight"}>
-        page1
-      </div>
-      <div className={themeModeDark ? "landingpageDark" : "landingpageLight"}>
-        page2
+        Home
       </div>
     </React.Fragment>
   );

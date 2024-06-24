@@ -3,19 +3,21 @@ import { AppContext } from "@/context/appcontextwrapper";
 import React, { useContext, useEffect, useState } from "react";
 import "./navbar.css";
 import DesktopNavbar from "./desktopNavbar";
+import MobileNavbar from "./mobileNavbar";
 
 const Navbar = () => {
   const { themeModeDark, setThemeModeDark } = useContext(AppContext);
 
   const [prevScrollPos, setPrevScrollPos] = useState(0);
   const [visible, setVisible] = useState(true);
-  const [isScrolled, setIsScrolled] = useState(0);
+
+  const [windowWidth, setWindowWidth] = useState(window.innerWidth);
 
   useEffect(() => {
+    setWindowWidth();
+
     const handleScroll = () => {
       const currentScrollPos = window.scrollY;
-        setIsScrolled(currentScrollPos)
-      console.log(isScrolled);
       const isVisible = prevScrollPos > currentScrollPos;
 
       setPrevScrollPos(currentScrollPos);
@@ -31,15 +33,15 @@ const Navbar = () => {
 
   return (
     <nav
-      style={{
-        backgroundColor: isScrolled >= 50 ? "transparent !important" : "",
-      }}
       className={`fixed top-0 left-0 w-full py-2 z-50 transition-opacity duration-300 ${
         visible ? "opacity-100" : "opacity-0"
-      } ${themeModeDark ? "navbarDark" : "navbarLight"} ${
-        isScrolled >= 50 ? "bg-transparent" : "bg-inherit"
-      }`}>
-      <DesktopNavbar />
+      } ${themeModeDark ? "text-white" : "text-black"}`}>
+      <section className="hidden md:flex items-center justify-center">
+        <DesktopNavbar />
+      </section>
+      <section className="flex items-center justify-end md:hidden">
+        <MobileNavbar />
+      </section>
     </nav>
   );
 };

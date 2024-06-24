@@ -28,7 +28,7 @@ export default function RootLayout({ children }) {
         <AppContextWrapper>
           <Navbar />
           {children}
-          </AppContextWrapper>
+        </AppContextWrapper>
       </body>
     </html>
   );

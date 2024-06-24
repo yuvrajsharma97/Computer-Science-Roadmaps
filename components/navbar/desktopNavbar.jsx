@@ -3,7 +3,7 @@ import React from "react";
 import ThemeToggle from "./themeToggle";
 
 const DesktopNavbar = () => {
-  const DesktopNavbarMenus = ["Explore", "Roadmaps", "About", "Contact"];
+  const DesktopNavbarMenus = ["Home", "Explore", "Roadmaps", "About", "Contact"];
 
   return (
     <div className="menuOption p-3 rounded-full flex">

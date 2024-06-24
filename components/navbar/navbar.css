@@ -1,71 +1,7 @@
-.navbarDark {
-  background: #000428; /* fallback for old browsers */
-  background: -webkit-linear-gradient(
-    to right,
-    #000000,
-    #232526
-  ); /* Chrome 10-25, Safari 5.1-6 */
-  background: linear-gradient(
-    to right,
-    #000000,
-    #232526
-  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-
-  background-size: 500% 500%;
-  background-position: 500%;
-  animation: gradientdark 20s ease infinite;
-  height: 10vh;
+.navbarCommon {
   display: flex;
   align-items: center;
   justify-content: center;
-  color: white;
-}
-
-.navbarLight {
-  background: #000428; /* fallback for old browsers */
-  background: -webkit-linear-gradient(
-    to right,
-    #e0eafc,
-    #cfdef3
-  ); /* Chrome 10-25, Safari 5.1-6 */
-  background: linear-gradient(
-    to right,
-    #e0eafc,
-    #cfdef3
-  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-
-  background-size: 500% 500%;
-  background-position: 500%;
-  animation: gradientlight 20s ease infinite;
-  height: 10vh;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  color: black;
-}
-
-@keyframes gradientdark {
-  0% {
-    background-position: 0%;
-  }
-  50% {
-    background-position: 100%;
-  }
-  100% {
-    background-position: 0%;
-  }
-}
-
-@keyframes gradientlight {
-  0% {
-    background-position: 0%;
-  }
-  50% {
-    background-position: 100%;
-  }
-  100% {
-    background-position: 0%;
-  }
 }
 
 .menuOption {
@@ -75,4 +11,3 @@
   -webkit-backdrop-filter: blur(3.5px);
   border: 1px solid rgba(255, 255, 255, 0.18);
 }
-

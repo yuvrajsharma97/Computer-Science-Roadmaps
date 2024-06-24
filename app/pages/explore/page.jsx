@@ -1,9 +1,17 @@
-import React from 'react'
+"use client";
+import React, { useContext } from "react";
+import "../style/pages.css";
+import { AppContext } from "@/context/appcontextwrapper";
 
 const Explore = () => {
+  const { themeModeDark } = useContext(AppContext);
   return (
-    <div>Explore</div>
-  )
-}
+    <React.Fragment>
+      <div className={themeModeDark ? "landingpageDark" : "landingpageLight"}>
+        Explore
+      </div>
+    </React.Fragment>
+  );
+};
 
-export default Explore
+export default Explore;
