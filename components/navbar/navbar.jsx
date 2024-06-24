@@ -12,7 +12,6 @@ const Navbar = () => {
   const [visible, setVisible] = useState(true);
 
   useEffect(() => {
-    setWindowWidth();
 
     const handleScroll = () => {
       const currentScrollPos = window.scrollY;
