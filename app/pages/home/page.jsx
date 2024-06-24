@@ -8,7 +8,10 @@ const HomePage = () => {
   return (
     <React.Fragment>
       <div className={themeModeDark ? "landingpageDark" : "landingpageLight"}>
-        page
+        page1
+      </div>
+      <div className={themeModeDark ? "landingpageDark" : "landingpageLight"}>
+        page2
       </div>
     </React.Fragment>
   );
