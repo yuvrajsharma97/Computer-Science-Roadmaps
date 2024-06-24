@@ -6,12 +6,10 @@ import DesktopNavbar from "./desktopNavbar";
 import MobileNavbar from "./mobileNavbar";
 
 const Navbar = () => {
-  const { themeModeDark, setThemeModeDark } = useContext(AppContext);
+  const { themeModeDark } = useContext(AppContext);
 
   const [prevScrollPos, setPrevScrollPos] = useState(0);
   const [visible, setVisible] = useState(true);
-
-  const [windowWidth, setWindowWidth] = useState(window.innerWidth);
 
   useEffect(() => {
     setWindowWidth();
