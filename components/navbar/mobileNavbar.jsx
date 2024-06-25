@@ -14,24 +14,14 @@ const MobileNavbar = () => {
   useEffect(() => {
     AOS.init();
   }, [MenuToggle]);
-  
+
   return (
     <React.Fragment>
-      {/* Position the toggle button at the top right of the screen */}
       <div className="fixed top-0 right-0 z-50 p-4">
-        <button onClick={() => setMenuToggle(!MenuToggle)}>
-          {MenuToggle ? (
-            <span className="transition duration-1000 ease-in-out">
-              <IoMdClose />
-            </span>
-          ) : (
-            <span className="transition duration-1000 ease-in-out">
-              <IoMdMenu />
-            </span>
-          )}
+        <button className="text-2xl" onClick={() => setMenuToggle(!MenuToggle)}>
+          {MenuToggle ? <IoMdClose /> : <IoMdMenu />}
         </button>
       </div>
-      {/* Conditionally render the menu options under the toggle button */}
       {MenuToggle && (
         <div
           data-aos="zoom-in-left"

@@ -9,7 +9,9 @@ const DesktopNavbar = () => {
     <div className="menuOption p-3 rounded-full flex">
       {DesktopNavbarMenus.map((menu, index) => (
         <React.Fragment key={index}>
-          <Link className="px-5" href={`/pages/${menu.toLowerCase()}`}>
+          <Link
+            className="px-5 hover:underline hover:decoration-2 underline-offset-4"
+            href={`/pages/${menu.toLowerCase()}`}>
             {menu}
           </Link>
           {index < DesktopNavbarMenus.length && " | "}
