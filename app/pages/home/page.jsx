@@ -54,8 +54,11 @@ const HomePage = () => {
             />
           </div>
         </section>
-        <section className="w-full flex justify-around bg-image1 bg-fixed bg-cover bg-no-repeat py-[3rem]">
-          <div className="w-5/6 glassEffect shadow-lg rounded-md p-6">
+        <section
+          className={`w-full flex justify-around bg-fixed bg-cover bg-no-repeat py-[3rem] ${
+            themeModeDark ? "bg-image2" : "bg-image3"
+          }`}>
+          <div className="w-5/6  shadow-lg glassEffect rounded-md p-6">
             <h1 className="text-3xl font-bold mb-6 text-center">We can help</h1>
             <div className="text-lg">
               <p className="my-5">
@@ -76,7 +79,8 @@ const HomePage = () => {
               </p>
             </div>
             <div className="flex justify-center mt-[4rem] my-5">
-              <Link href={"/pages/explore"}
+              <Link
+                href={"/pages/explore"}
                 class="inline-block rounded bg-black px-7 pb-2.5 pt-3 text-sm uppercase font-sm leading-normal text-white shadow-primary-3 transition duration-150 ease-in-out hover:bg-black-500 hover:shadow-primary-2 focus:bg-black-500 focus:shadow-primary-2 focus:outline-none focus:ring-0 active:bg-black-500 active:shadow-primary-2 dark:shadow-black/30 dark:hover:shadow-dark-strong dark:focus:shadow-dark-strong dark:active:shadow-dark-strong">
                 Explore Pathways
               </Link>
