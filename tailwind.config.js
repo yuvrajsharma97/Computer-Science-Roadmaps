@@ -17,8 +17,8 @@ module.exports = {
         "gradient-conic":
           "conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))",
         heroImage: "url('/assets/heroImage.jpg')",
-        image1: "url('/assets/image1.jpg')",
-        image2: "url('/assets/image2.jpg')",
+        image1: "url('/assets/image1desktop.jpg')",
+        image2: "url('/assets/image1mobile.jpg')",
         image3: "url('/assets/image3.jpg')",
       },
       screens: {

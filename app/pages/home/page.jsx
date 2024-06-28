@@ -10,7 +10,6 @@ import Link from "next/link";
 const HomePage = () => {
   const { themeModeDark } = useContext(AppContext);
   useEffect(() => {
-    
     AOS.init();
   }, []);
 
@@ -56,9 +55,12 @@ const HomePage = () => {
         </section>
         <section
           className={`w-full flex justify-around bg-fixed bg-cover bg-no-repeat py-[3rem] ${
-            themeModeDark ? "bg-image2" : "bg-image3"
+            themeModeDark ? "xs:bg-image2 md:bg-image1" : "bg-image3"
           }`}>
-          <div className="w-5/6  shadow-lg glassEffect rounded-md p-6">
+          <div
+            className={`w-5/6  shadow-lg rounded-md p-6 ${
+              themeModeDark ? "glassEffectDark" : "glassEffectWhite"
+            }`}>
             <h1 className="text-3xl font-bold mb-6 text-center">We can help</h1>
             <div className="text-lg">
               <p className="my-5">
