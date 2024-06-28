@@ -54,7 +54,7 @@ const HomePage = () => {
           </div>
         </section>
         <section
-          className={`w-full flex justify-around xs:bg-scroll md:bg-fixed bg-cover py-[3rem] ${
+          className={`w-full flex justify-around bg-fixed xs:bg-local md:bg-scroll lg:bg-local xl:bg-fixed bg-cover py-[3rem] ${
             themeModeDark ? "xs:bg-image2 md:bg-image1" : "bg-image3"
           }`}>
           <div
