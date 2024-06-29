@@ -17,9 +17,10 @@ module.exports = {
         "gradient-conic":
           "conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))",
         heroImage: "url('/assets/heroImage.jpg')",
-        image1: "url('/assets/image1desktop.jpg')",
-        image2: "url('/assets/image1mobile.jpg')",
-        image3: "url('/assets/image3.jpg')",
+        darkDesktopBg: "url('/assets/image2desktop.jpg')",
+        darkMobileBg: "url('/assets/image2mobile.jpg')",
+        lightDesktopBg: "url('/assets/image1desktop.jpg')",
+        lightMobileBg: "url('/assets/image1mobile.jpg')",
       },
       screens: {
         xs: { min: "300px", max: "640px" },
