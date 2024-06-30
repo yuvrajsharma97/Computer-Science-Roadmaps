@@ -1,6 +1,7 @@
 import { AppContextWrapper } from "@/context/appcontextwrapper";
 import "./globals.css";
 import Navbar from "@/components/navbar/navbar";
+import Footer from "@/components/footer/footer";
 
 export const metadata = {
   title: "Computer Science Roadmaps",
@@ -27,7 +28,8 @@ export default function RootLayout({ children }) {
       <body>
         <AppContextWrapper>
           <Navbar />
-          {children}
+          <main >{children}</main>
+          <Footer />
         </AppContextWrapper>
       </body>
     </html>
