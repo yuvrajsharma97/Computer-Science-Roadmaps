@@ -25,6 +25,14 @@ module.exports = {
       screens: {
         xs: { min: "300px", max: "640px" },
       },
+      colors: {
+        primary: "#0F0F0F",
+        secondary: "#31363F",
+        accent: "#76ABAE",
+        light: "#EEEDEB",
+        bright1: "#FF7F3E",
+        bright2: "#FFC700",
+      },
     },
   },
   plugins: [require("tw-elements/plugin.cjs")],
