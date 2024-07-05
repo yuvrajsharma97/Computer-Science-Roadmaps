@@ -41,8 +41,8 @@ const Explore = () => {
           Please note that this is a comprehensive form, and it might take some
           time to complete. However, by the end of it, you will have a clearer
           understanding of your interests and be more confident in choosing your
-          career pathway. Let's get started on this journey to find the best fit
-          for you in the exciting world of technology!
+          career pathway. Let&apos;s get started on this journey to find the
+          best fit for you in the exciting world of technology!
         </p>
         <p className="text-end my-4 text-sm">
           <span className="text-bright2">* </span>
