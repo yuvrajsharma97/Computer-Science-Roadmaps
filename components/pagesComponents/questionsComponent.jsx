@@ -1,17 +1,23 @@
 import { AppContext } from "@/context/appcontextwrapper";
 import React, { useContext, useState } from "react";
+import "./pagesComponent.css";
+import LoaderComponent from "./loaderComponent";
 
 function QuestionsComponent({ Questions }) {
   // State to keep track of the current question index
   const [currentQuestionIndex, setCurrentQuestionIndex] = useState(0);
-  const { answersArray, setAnswersArray } = useContext(AppContext);
+  const { answersArray, setAnswersArray, setQuestionsStatus } =
+    useContext(AppContext);
+  const [finished, setFinished] = useState(false);
 
-  
   const handleResponse = () => {
     if (currentQuestionIndex < Questions.length - 1) {
       setCurrentQuestionIndex(currentQuestionIndex + 1);
     } else {
       console.log("End of Questions");
+      setFinished(true);
+      setTimeout(() => {
+        setQuestionsStatus(false);}, 2000);
     }
   };
 
@@ -24,7 +30,13 @@ function QuestionsComponent({ Questions }) {
     }
   };
 
-  return (
+  return finished ? (
+    <div>
+      <p className="text-xl text-center my-5"> Looks like you are all done </p>
+      <p className="text-xl text-center my-5"> Give us a moment to process all the information. </p>
+      <LoaderComponent />
+    </div>
+  ) : (
     <div>
       {Questions.length > 0 && currentQuestionIndex < Questions.length && (
         <div className="border-b p-4">
@@ -37,14 +49,14 @@ function QuestionsComponent({ Questions }) {
           <div className="mt-5 mb-2">
             <span>
               <button
-                className="bg-bright1 text-white px-4 py-1 rounded-lg mx-5"
+                className="bg-bright1 text-white px-4 py-1 rounded-sm mx-5"
                 onClick={() =>
                   handleYes(Questions[currentQuestionIndex].field)
                 }>
                 Yes
               </button>
               <button
-                className="bg-bright1 text-white px-4 py-1 rounded-lg"
+                className="bg-bright1 text-white px-4 py-1 rounded-sm"
                 onClick={handleResponse}>
                 No
               </button>

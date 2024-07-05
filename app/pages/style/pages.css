@@ -123,20 +123,6 @@
   backdrop-filter: blur(7px) saturate(180%);
     -webkit-backdrop-filter: blur(7px) saturate(180%);
     background-color: rgba(255, 255, 255, 0.34);
-   
+}
 
-}
-/* HTML: <div class="loader"></div> */
-.loader {
-  width: 50px;
-  aspect-ratio: 1;
-  --_c:no-repeat linear-gradient(#FF7F3E 0 0) 50%; 
-  background: 
-    var(--_c)/100% 50%,
-    var(--_c)/50% 100%;
-  border-radius: 50%;
-  animation: l29 2s infinite linear;
-}
-@keyframes l29 {
-  100% {transform: rotate(1turn)}
-}
+

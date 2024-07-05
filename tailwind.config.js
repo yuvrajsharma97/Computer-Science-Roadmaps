@@ -30,7 +30,7 @@ module.exports = {
         secondary: "#31363F",
         accent: "#76ABAE",
         light: "#EEEDEB",
-        bright1: "#FF7F3E",
+        bright1: "#FF3D00",
         bright2: "#FFC700",
       },
     },

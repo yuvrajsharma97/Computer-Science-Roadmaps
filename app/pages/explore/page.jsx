@@ -3,13 +3,13 @@
 import React, { useContext, useEffect, useState } from "react";
 import { AppContext } from "@/context/appcontextwrapper";
 import Questions from "@/jsonData/questions";
-import "../style/pages.css";
 import QuestionsComponent from "@/components/pagesComponents/questionsComponent";
-
+import LoaderComponent from "@/components/pagesComponents/loaderComponent";
+import Link from "next/link";
 
 const Explore = () => {
-  const { themeModeDark } = useContext(AppContext);
-  const [showQuestion, setShowQuestion] = useState(false);
+  const { themeModeDark, questionsStatus, setQuestionsStatus, answersArray } =
+    useContext(AppContext);
   const [loader, setLoader] = useState(false);
   const [hideStart, setHideStart] = useState(false);
 
@@ -19,10 +19,9 @@ const Explore = () => {
 
     setTimeout(() => {
       setLoader(false);
-      setShowQuestion(true);
-    }, 2000);
+      setQuestionsStatus(true);
+    }, 1000);
   };
-
 
   return (
     <div
@@ -45,25 +44,55 @@ const Explore = () => {
           career pathway. Let's get started on this journey to find the best fit
           for you in the exciting world of technology!
         </p>
+        <p className="text-end my-4 text-sm">
+          <span className="text-bright2">* </span>
+          If you want to re-take the test, please refresh the page.
+        </p>
       </div>
 
       <div className="border w-10/12 rounded-lg mb-[5rem]">
         <div className="flex justify-around">
-          <button
-            className={`${
-              hideStart ? "hidden" : "block"
-            } bg-bright1 text-white px-6 py-2 rounded-lg my-4`}
-            onClick={handeStart}>
-            Start
-          </button>
+          {answersArray.length === 0 && (
+            <button
+              className={`${
+                hideStart ? "hidden" : "block"
+              } bg-bright1 text-white px-6 py-2 rounded-sm my-4`}
+              onClick={handeStart}>
+              Start
+            </button>
+          )}
         </div>
-        {loader && (
-          <div className="flex justify-center items-center h-48">
-            <div className="loader"></div>
-          </div>
-        )}
-        {showQuestion && (
+        {loader && <LoaderComponent />}
+        {questionsStatus ? (
           <QuestionsComponent Questions={Questions} />
+        ) : (
+          <React.Fragment>
+            {answersArray.length > 0 && (
+              <>
+                {" "}
+                <p className="text-xl text-center my-5">
+                  According to your choices we have found most suitable carrier
+                  path for you.
+                </p>
+                <div className="flex flex-wrap justify-around w-full">
+                  {answersArray.map((answer, index) => (
+                    <span
+                      key={index}
+                      className="w-48 m-5 text-center bg-gradient-to-r from-bright2 to-bright1 font-bold rounded-sm p-4">
+                      {answer}
+                    </span>
+                  ))}
+                </div>
+                <div className="flex justify-around mt-[3rem] border-t ">
+                  <Link
+                    href={"/pages/roadmaps"}
+                    className="bg-bright1 text-white px-6 py-2 rounded-sm my-4">
+                    Browse Roadmaps
+                  </Link>
+                </div>
+              </>
+            )}
+          </React.Fragment>
         )}
       </div>
     </div>

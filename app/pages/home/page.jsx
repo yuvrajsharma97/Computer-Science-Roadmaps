@@ -15,8 +15,7 @@ const HomePage = () => {
 
   return (
     <React.Fragment>
-      <div
-        className={themeModeDark ? "landingpageDark" : "landingpageLight"}>
+      <div className={themeModeDark ? "landingpageDark" : "landingpageLight"}>
         <div className="flex flex-col md:flex-row justify-around items-center h-full">
           <div data-aos="zoom-in" className="text-center md:text-left">
             <h1 className="text-4xl md:text-6xl">Computer Science</h1>
@@ -88,7 +87,7 @@ const HomePage = () => {
           <div className="flex justify-center mt-[4rem] my-5">
             <Link
               href={"/pages/explore"}
-              class="inline-block rounded bg-black px-7 pb-2.5 pt-3 text-sm uppercase font-sm leading-normal text-white shadow-primary-3 transition duration-150 ease-in-out hover:bg-black-500 hover:shadow-primary-2 focus:bg-black-500 focus:shadow-primary-2 focus:outline-none focus:ring-0 active:bg-black-500 active:shadow-primary-2 dark:shadow-black/30 dark:hover:shadow-dark-strong dark:focus:shadow-dark-strong dark:active:shadow-dark-strong">
+              className="inline-block rounded bg-bright1 px-7 py-2.5 text-sm uppercase font-sm leading-normal text-white shadow-primary-3 transition-all hover:bg-black-500 hover:shadow-primary-2 focus:bg-black-500 focus:shadow-primary-2 focus:outline-none focus:ring-0 active:bg-black-500 active:shadow-primary-2 dark:shadow-black/30 dark:hover:shadow-dark-strong dark:focus:shadow-dark-strong dark:active:shadow-dark-strong">
               Explore Pathways
             </Link>
           </div>
