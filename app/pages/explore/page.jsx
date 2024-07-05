@@ -20,7 +20,7 @@ const Explore = () => {
     setTimeout(() => {
       setLoader(false);
       setQuestionsStatus(true);
-    }, 1000);
+    }, 2000);
   };
 
   return (
@@ -52,7 +52,7 @@ const Explore = () => {
 
       <div className="border w-10/12 rounded-lg mb-[5rem]">
         <div className="flex justify-around">
-          {answersArray.length === 0 && (
+          {!questionsStatus && (
             <button
               className={`${
                 hideStart ? "hidden" : "block"

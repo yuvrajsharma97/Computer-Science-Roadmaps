@@ -22,9 +22,7 @@ const HomePage = () => {
             <div className="mt-4 md:mt-[2rem] text-2xl flex flex-col md:flex-row justify-center md:justify-start">
               <span className="text-4xl">is</span>
               <span
-                className={`animation xs:text-4xl xs:mt-5 md:mt-0 md:text-4xl border-b-2 ${
-                  themeModeDark ? "border-white" : "border-black"
-                }`}>
+                className="animation xs:text-4xl xs:mt-5 md:mt-0 md:text-4xl border-b-2 border-bright2">
                 <div className="first">
                   <div>Vast</div>
                 </div>

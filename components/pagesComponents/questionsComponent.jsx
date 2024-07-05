@@ -17,7 +17,8 @@ function QuestionsComponent({ Questions }) {
       console.log("End of Questions");
       setFinished(true);
       setTimeout(() => {
-        setQuestionsStatus(false);}, 2000);
+        setQuestionsStatus(false);
+      }, 4000);
     }
   };
 
@@ -33,7 +34,10 @@ function QuestionsComponent({ Questions }) {
   return finished ? (
     <div>
       <p className="text-xl text-center my-5"> Looks like you are all done </p>
-      <p className="text-xl text-center my-5"> Give us a moment to process all the information. </p>
+      <p className="text-xl text-center my-5">
+        {" "}
+        Give us a moment to process all the information.{" "}
+      </p>
       <LoaderComponent />
     </div>
   ) : (
