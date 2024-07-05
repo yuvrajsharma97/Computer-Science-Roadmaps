@@ -87,8 +87,8 @@ const HomePage = () => {
           <div className="flex justify-center mt-[4rem] my-5">
             <Link
               href={"/pages/explore"}
-              className="inline-block rounded bg-bright1 px-7 py-2.5 text-sm uppercase font-sm leading-normal text-white shadow-primary-3 transition-all hover:bg-black-500 hover:shadow-primary-2 focus:bg-black-500 focus:shadow-primary-2 focus:outline-none focus:ring-0 active:bg-black-500 active:shadow-primary-2 dark:shadow-black/30 dark:hover:shadow-dark-strong dark:focus:shadow-dark-strong dark:active:shadow-dark-strong">
-              Explore Pathways
+              className="inline-block rounded bg-bright1 px-7 py-2.5 text-sm font-sm leading-normal text-white shadow-primary-3 transition-all hover:bg-black-500 hover:shadow-primary-2 focus:bg-black-500 focus:shadow-primary-2 focus:outline-none focus:ring-0 active:bg-black-500 active:shadow-primary-2 dark:shadow-black/30 dark:hover:shadow-dark-strong dark:focus:shadow-dark-strong dark:active:shadow-dark-strong">
+              EXPLORE PATHWAYS
             </Link>
           </div>
         </div>
