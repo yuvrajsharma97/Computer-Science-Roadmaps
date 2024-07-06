@@ -2,23 +2,27 @@ import { AppContext } from "@/context/appcontextwrapper";
 import React, { useContext, useState } from "react";
 import "./pagesComponent.css";
 import LoaderComponent from "./loaderComponent";
+import Confetti from "react-confetti";
 
 function QuestionsComponent({ Questions }) {
   // State to keep track of the current question index
   const [currentQuestionIndex, setCurrentQuestionIndex] = useState(0);
-  const { answersArray, setAnswersArray, setQuestionsStatus } =
-    useContext(AppContext);
+  const {
+    answersArray,
+    setAnswersArray,
+    setQuestionsStatus,
+    setIsExploding,
+  } = useContext(AppContext);
   const [finished, setFinished] = useState(false);
 
   const handleResponse = () => {
     if (currentQuestionIndex < Questions.length - 1) {
       setCurrentQuestionIndex(currentQuestionIndex + 1);
     } else {
-      console.log("End of Questions");
       setFinished(true);
       setTimeout(() => {
         setQuestionsStatus(false);
-      }, 4000);
+      }, 6000);
     }
   };
 
@@ -32,6 +36,8 @@ function QuestionsComponent({ Questions }) {
   };
 
   return finished ? (
+    <React.Fragment>
+      <Confetti width={window.innerWidth} height={window.innerHeight} />
     <div>
       <p className="text-xl text-center my-5"> Looks like you are all done </p>
       <p className="text-xl text-center my-5">
@@ -40,6 +46,7 @@ function QuestionsComponent({ Questions }) {
       </p>
       <LoaderComponent />
     </div>
+    </React.Fragment>
   ) : (
     <div>
       {Questions.length > 0 && currentQuestionIndex < Questions.length && (

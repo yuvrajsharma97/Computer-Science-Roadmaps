@@ -11,6 +11,7 @@ module.exports = {
       boxShadow: {
         dark: "0px 0px 4px #000000",
         light: "0px 0px 4px #ffffff",
+        cardShadow: "0px 0px 10px 2px #FFC700",
       },
       backgroundImage: {
         "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",

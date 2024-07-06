@@ -25,7 +25,7 @@ const Explore = () => {
 
   return (
     <div
-      className={`w-full flex flex-col justify-around items-center h-full ${
+      className={`w-full flex flex-col justify-around items-center min-h-screen ${
         themeModeDark ? "bg-primary text-white" : "bg-light text-black"
       }`}>
       <div className="w-10/12 my-[5rem]">
@@ -52,7 +52,7 @@ const Explore = () => {
 
       <div className="border w-10/12 rounded-lg mb-[5rem]">
         <div className="flex justify-around">
-          {!questionsStatus && (
+          {!questionsStatus && answersArray.length === 0 && (
             <button
               className={`${
                 hideStart ? "hidden" : "block"

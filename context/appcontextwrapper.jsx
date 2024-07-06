@@ -7,6 +7,7 @@ export const AppContextWrapper = ({ children }) => {
   const [themeModeDark, setThemeModeDark] = useState(true);
   const [answersArray, setAnswersArray] = useState([]); 
   const [questionsStatus, setQuestionsStatus] = useState(false);
+  
 
   return (
     <AppContext.Provider
