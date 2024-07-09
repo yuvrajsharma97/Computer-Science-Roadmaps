@@ -10,11 +10,11 @@ const RoadmapAccordian = ({ accordionData }) => {
 
   return (
     <React.Fragment>
-      <div className="h-full py-[5rem] w-full">
+      <div className="h-full py-5 w-full">
         {accordionData.map((data, index) => (
           <div
             key={index}
-            className="collapse bg-fourth border border-fourth my-3 w-4/6 mx-auto text-primary">
+            className="collapse bg-fourth border border-fourth my-5 w-4/6 mx-auto text-primary">
             <input type="radio" name="my-accordion-1" />
             <div className="collapse-title text-xl font-medium text-center">
               <p>{data.title}</p>

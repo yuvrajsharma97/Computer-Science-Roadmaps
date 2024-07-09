@@ -272,15 +272,7 @@ const CSSObj = [
       "Cross-browser Compatibility",
     ],
   },
-  {
-    title: "Tools and Frameworks",
-    subtopics: [
-      "CSS Resets and Normalizers",
-      "CSS Frameworks (e.g., Bootstrap, Tailwind CSS)",
-      "CSS-in-JS",
-      "PostCSS",
-    ],
-  },
+ 
 ];
 
 const VersionControlObj = [
