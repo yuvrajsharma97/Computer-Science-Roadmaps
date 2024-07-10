@@ -4,7 +4,7 @@ const ModalsComponent = ({ modals }) => {
   return (
     <React.Fragment>
       {modals.map((modal) => (
-        <div key={modal.id} className="flex flex-col md:flex-row justify-evenly items-center w-full">
+        <div key={modal.id} className="flex flex-col md:flex-row justify-evenly items-center w-full text-white">
           <button
             className="btn bg-fourth text-secondary hover:text-fourth w-2/6 my-2 hover:border-fourth"
             onClick={() => document.getElementById(modal.id).showModal()}>
@@ -13,7 +13,7 @@ const ModalsComponent = ({ modals }) => {
           <dialog id={modal.id} className="modal">
             <div
               className={` modal-box ${
-                !modal.content.videoSrc ? "w-6/12" : " w-11/12 max-w-5xl"
+                !modal.content.videoSrc ? "xs:10/12 md:w-6/12" : " w-11/12 max-w-5xl"
               }`}>
               <form method="dialog">
                 <button className="btn btn-sm btn-circle btn-ghost absolute right-2 top-2">

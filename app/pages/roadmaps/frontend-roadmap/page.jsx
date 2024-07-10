@@ -7,7 +7,9 @@ import {
   JavaScriptBasicObj,
   JavaScriptAdvancedObj,
   PackageManagersObj,
-  AdvancedCSSObj,
+  HTMLModals,
+  CSSModals,
+  VCModals,
 } from "@/jsonData/roadmapData";
 import RoadmapAccordian from "@/components/pagesComponents/roadmapAccordian";
 import { AppContext } from "@/context/appcontextwrapper";
@@ -17,59 +19,41 @@ import ModalsComponent from "@/components/pagesComponents/modalsComponent";
 const FrontendRoadmap = () => {
   const { themeModeDark } = useContext(AppContext);
 
-  const HTMLModals = [
+  const sections = [
     {
-      id: "my_modal_1",
-      buttonText: "Resources",
-      content: {
-        title: "Online resources for Learning HTML",
-        links: [
-          {
-            href: "https://developer.mozilla.org/en-US/docs/Learn/HTML",
-            text: "MDN Web Docs",
-          },
-          { href: "https://www.w3schools.com/html/", text: "W3 Schools" },
-          { href: "https://www.freecodecamp.org/", text: "Free Code Camp" },
-        ],
-      },
+      title: "HTML",
+      accordionData: HTMLObj,
+      modals: HTMLModals,
+      paddingTop: "pt-[6rem]",
     },
     {
-      id: "my_modal_2",
-      buttonText: "Video Lecture",
-      content: {
-        videoSrc:
-          "https://www.youtube.com/embed/kUMe1FH4CHE?si=0LzbA5DPD0CfmzRI",
-        videoTitle: "YouTube video player",
-      },
+      title: "CSS",
+      accordionData: CSSObj,
+      modals: CSSModals,
+      paddingTop: "pt-[3rem]",
+    },
+    {
+      title: "Version Control",
+      accordionData: VersionControlObj,
+      modals: VCModals,
+      paddingTop: "pt-[3rem]",
     },
   ];
 
   return (
-    <div
-      className={`w-full min-h-screen ${
-        themeModeDark ? "bg-primary text-white" : "bg-light text-black"
-      }`}>
-      <div className="w-full pt-[6rem]">
-        <h1 className="text-3xl font-bold text-bright1 text-center">HTML</h1>
-        <RoadmapAccordian accordionData={HTMLObj} />
-
-        <div className="md:flex">
-          <ModalsComponent modals={HTMLModals} />
+    <>
+      {sections.map((section, index) => (
+        <div key={index} className={`w-full ${section.paddingTop}`}>
+          <h1 className="text-3xl font-bold text-bright1 text-center">
+            {section.title}
+          </h1>
+          <RoadmapAccordian accordionData={section.accordionData} />
+          <div className="md:flex">
+            <ModalsComponent modals={section.modals} />
+          </div>
         </div>
-      </div>
-
-      <div className="w-full pt-[3rem]">
-        <h1 className="text-3xl font-bold text-bright1 text-center">CSS</h1>
-        <RoadmapAccordian accordionData={CSSObj} />
-      </div>
-
-      <div className="w-full pt-[3rem]">
-        <h1 className="text-3xl font-bold text-bright1 text-center">
-          Version Control
-        </h1>
-        <RoadmapAccordian accordionData={VersionControlObj} />
-      </div>
-    </div>
+      ))}
+    </>
   );
 };
 

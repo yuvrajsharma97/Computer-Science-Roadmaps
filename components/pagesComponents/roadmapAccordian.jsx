@@ -16,7 +16,7 @@ const RoadmapAccordian = ({ accordionData }) => {
             key={index}
             className="collapse bg-fourth border border-fourth my-5 w-4/6 mx-auto text-primary">
             <input type="radio" name="my-accordion-1" />
-            <div className="collapse-title text-xl font-medium text-center">
+            <div className="collapse-title text-lg font-medium text-center">
               <p>{data.title}</p>
             </div>
             <div className="collapse-content">

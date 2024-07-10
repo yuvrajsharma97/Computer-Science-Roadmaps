@@ -272,7 +272,38 @@ const CSSObj = [
       "Cross-browser Compatibility",
     ],
   },
- 
+  {
+    title: "Preprocessors",
+    subtopics: ["SASS", "SCSS"],
+  },
+  {
+    title: "CSS-in-JS",
+    subtopics: ["Styled-components", "Emotion"],
+  },
+  {
+    title: "CSS Frameworks",
+    subtopics: ["Bootstrap", "Tailwind CSS"],
+  },
+  {
+    title: "CSS Methodologies",
+    subtopics: ["BEM (Block Element Modifier)", "OOCSS (Object-Oriented CSS)"],
+  },
+  {
+    title: "Responsive Design",
+    subtopics: ["Mobile-first design", "Media queries"],
+  },
+  {
+    title: "Responsive Design Frameworks",
+    subtopics: ["Bootstrap", "Foundation"],
+  },
+  {
+    title: "Responsive Design Techniques",
+    subtopics: ["Flexbox", "CSS Grid"],
+  },
+  {
+    title: "UI Libraries and Design Systems",
+    subtopics: ["Material-UI", "Ant Design", "Chakra UI"],
+  },
 ];
 
 const VersionControlObj = [
@@ -620,39 +651,104 @@ const PackageManagersObj = [
   },
 ];
 
-const AdvancedCSSObj = [
+
+
+const HTMLModals = [
   {
-    title: "Preprocessors",
-    subtopics: ["SASS", "SCSS"],
+    id: "my_modal_1",
+    buttonText: "Resources",
+    content: {
+      title: "Online resources for Learning HTML",
+      links: [
+        {
+          href: "https://developer.mozilla.org/en-US/docs/Learn/HTML",
+          text: "MDN Web Docs",
+        },
+        { href: "https://www.w3schools.com/html/", text: "W3 Schools" },
+        {
+          href: "https://www.freecodecamp.org/news/tag/html/",
+          text: "Free Code Camp",
+        },
+      ],
+    },
   },
   {
-    title: "CSS-in-JS",
-    subtopics: ["Styled-components", "Emotion"],
-  },
-  {
-    title: "CSS Frameworks",
-    subtopics: ["Bootstrap", "Tailwind CSS"],
-  },
-  {
-    title: "CSS Methodologies",
-    subtopics: ["BEM (Block Element Modifier)", "OOCSS (Object-Oriented CSS)"],
-  },
-  {
-    title: "Responsive Design",
-    subtopics: ["Mobile-first design", "Media queries"],
-  },
-  {
-    title: "Responsive Design Frameworks",
-    subtopics: ["Bootstrap", "Foundation"],
-  },
-  {
-    title: "Responsive Design Techniques",
-    subtopics: ["Flexbox", "CSS Grid"],
-  },
-  {
-    title: "UI Libraries and Design Systems",
-    subtopics: ["Material-UI", "Ant Design", "Chakra UI"],
+    id: "my_modal_2",
+    buttonText: "Video Lecture",
+    content: {
+      videoSrc: "https://www.youtube.com/embed/kUMe1FH4CHE?si=0LzbA5DPD0CfmzRI",
+      videoTitle: "YouTube video player",
+    },
   },
 ];
 
-export { HTMLObj, CSSObj, VersionControlObj, JavaScriptBasicObj, JavaScriptAdvancedObj, PackageManagersObj, AdvancedCSSObj };   // eslint-disable-line
+const CSSModals = [
+  {
+    id: "my_modal_3",
+    buttonText: "Resources",
+    content: {
+      title: "Online resources for Learning CSS",
+      links: [
+        {
+          href: "https://developer.mozilla.org/en-US/docs/Web/CSS",
+          text: "MDN Web Docs",
+        },
+        { href: "https://www.w3schools.com/css/", text: "W3 Schools" },
+        {
+          href: "https://www.freecodecamp.org/news/tag/css/",
+          text: "Free Code Camp",
+        },
+      ],
+    },
+  },
+  {
+    id: "my_modal_4",
+    buttonText: "Video Lecture",
+    content: {
+      videoSrc: "https://www.youtube.com/embed/OXGznpKZ_sA?si=2_d1eZfeetKqdI6V",
+      videoTitle: "YouTube video player",
+    },
+  },
+];
+
+const VCModals = [
+  {
+    id: "my_modal_5",
+    buttonText: "Resources",
+    content: {
+      title: "Online resources for Learning Version Control",
+      links: [
+        {
+          href: "https://docs.github.com/en/get-started/getting-started-with-git",
+          text: "Github Docs",
+        },
+        { href: "https://www.w3schools.com/git/", text: "W3 Schools" },
+        {
+          href: "https://www.freecodecamp.org/news/introduction-to-git-and-github/",
+          text: "Free Code Camp",
+        },
+      ],
+    },
+  },
+  {
+    id: "my_modal_6",
+    buttonText: "Video Lecture",
+    content: {
+      videoSrc: "https://www.youtube.com/embed/RGOj5yH7evk?si=jhWbGyQJ1m5vQpZd",
+      videoTitle: "YouTube video player",
+    },
+  },
+];
+
+export {
+  HTMLObj,
+  CSSObj,
+  VersionControlObj,
+  JavaScriptBasicObj,
+  JavaScriptAdvancedObj,
+  PackageManagersObj,
+  
+  HTMLModals,
+  CSSModals,
+  VCModals,
+};   // eslint-disable-line
