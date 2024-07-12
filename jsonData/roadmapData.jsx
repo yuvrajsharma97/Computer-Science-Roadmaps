@@ -740,6 +740,35 @@ const VCModals = [
   },
 ];
 
+const JSModals = [
+  {
+    id: "my_modal_5",
+    buttonText: "Resources",
+    content: {
+      title: "Online resources for Learning Version Control",
+      links: [
+        {
+          href: "https://docs.github.com/en/get-started/getting-started-with-git",
+          text: "Github Docs",
+        },
+        { href: "https://www.w3schools.com/git/", text: "W3 Schools" },
+        {
+          href: "https://www.freecodecamp.org/news/introduction-to-git-and-github/",
+          text: "Free Code Camp",
+        },
+      ],
+    },
+  },
+  {
+    id: "my_modal_6",
+    buttonText: "Video Lecture",
+    content: {
+      videoSrc: "https://www.youtube.com/embed/RGOj5yH7evk?si=jhWbGyQJ1m5vQpZd",
+      videoTitle: "YouTube video player",
+    },
+  },
+];
+
 export {
   HTMLObj,
   CSSObj,
