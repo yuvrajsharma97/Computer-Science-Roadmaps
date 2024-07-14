@@ -404,7 +404,7 @@ const VersionControlObj = [
   },
 ];
 
-const JavaScriptBasicObj = [
+const JavaScriptObj = [
   {
     title: "Introduction to JavaScript",
     subtopics: [
@@ -532,9 +532,6 @@ const JavaScriptBasicObj = [
       "Performance Optimization",
     ],
   },
-];
-
-const JavaScriptAdvancedObj = [
   {
     title: "Scope",
     subtopics: [
@@ -651,7 +648,296 @@ const PackageManagersObj = [
   },
 ];
 
+const ReactObj = [
+  {
+    title: "What is React?",
+    subtopics: [
+      "Understand the basic concepts of React and its use in building user interfaces.",
+    ],
+  },
+  {
+    title: "Setting Up the Environment",
+    subtopics: [
+      "Install Node.js and npm.",
+      "Create a React application using Create React App or Vite.",
+      "Overview of the project structure.",
+    ],
+  },
+  {
+    title: "Core Concepts",
+    subtopics: [
+      "JSX (JavaScript XML)",
+      "Syntax and usage.",
+      "Embedding expressions in JSX.",
+      "Components",
+      "Functional components.",
+      "Props and state.",
+    ],
+  },
+  {
+    title: "State Management with Hooks",
+    subtopics: [
+      "useState Hook",
+      "Managing state in functional components.",
+      "Using arrays and objects in state.",
+      "useEffect Hook",
+      "Handling side effects.",
+      "Cleanup functions in useEffect.",
+      "Dependencies in useEffect.",
+    ],
+  },
+  {
+    title: "Handling Events",
+    subtopics: [
+      "Event Handling",
+      "Handling events in React.",
+      "Synthetic events.",
+      "Event binding.",
+    ],
+  },
+  {
+    title: "Forms and User Input",
+    subtopics: [
+      "Controlled Components",
+      "Handling form inputs.",
+      "Controlled vs uncontrolled components.",
+      "Form Validation",
+      "Basic form validation techniques.",
+      "Third-party libraries (e.g., Formik, Yup).",
+    ],
+  },
+  {
+    title: "Routing",
+    subtopics: [
+      "React Router",
+      "Setting up React Router.",
+      "Route, Link, and NavLink components.",
+      "Nested routes and route parameters.",
+      "Programmatic navigation.",
+    ],
+  },
+  {
+    title: "Context API for State Management",
+    subtopics: [
+      "Context API",
+      "Creating and using context.",
+      "Context.Provider and useContext Hook.",
+      "useReducer Hook",
+      "Using the useReducer Hook for complex state logic.",
+      "Comparing useReducer with useState.",
+    ],
+  },
+  {
+    title: "Styling",
+    subtopics: [
+      "CSS Modules",
+      "Using CSS Modules for scoped styles.",
+      "Styled-components",
+      "Installing and using styled-components.",
+      "Creating styled components.",
+      "Tailwind CSS (optional)",
+      "Integrating Tailwind CSS with React.",
+    ],
+  },
+  {
+    title: "Performance Optimization",
+    subtopics: [
+      "Memoization",
+      "useMemo and useCallback Hooks.",
+      "Code Splitting",
+      "React.lazy and Suspense.",
+      "Dynamic import.",
+      "React Profiler",
+      "Using the React Profiler tool to identify performance bottlenecks.",
+    ],
+  },
+  {
+    title: "Advanced Hooks",
+    subtopics: [
+      "Custom Hooks",
+      "Creating and using custom hooks.",
+      "useRef Hook",
+      "Accessing DOM elements with useRef.",
+      "Persisting values between renders.",
+      "useContext Hook",
+      "Managing global state with useContext.",
+      "useReducer Hook",
+      "Handling complex state logic with useReducer.",
+    ],
+  },
+  {
+    title: "Integrating with APIs",
+    subtopics: [
+      "Fetching Data",
+      "Fetch API and axios.",
+      "useEffect for data fetching.",
+      "Handling Asynchronous Code",
+      "Promises and async/await.",
+      "Error handling and loading states.",
+    ],
+  },
+];
 
+const AngularObj = [
+  {
+    title: "Introduction to Angular",
+    subtopics: [
+      "Understand the basic concepts of Angular and its use in building single-page applications (SPAs).",
+    ],
+  },
+  {
+    title: "Setting Up the Environment",
+    subtopics: [
+      "Install Node.js and npm.",
+      "Install Angular CLI: npm install -g @angular/cli",
+      "Create a new Angular application: ng new my-angular-app",
+      "Overview of the project structure.",
+    ],
+  },
+  {
+    title: "Core Concepts",
+    subtopics: [
+      "Modules",
+      "Understanding NgModules.",
+      "Root module and feature modules.",
+      "Components",
+      "Creating components.",
+      "Component metadata and templates.",
+      "Data binding (interpolation, property binding, event binding, and two-way binding).",
+    ],
+  },
+  {
+    title: "Templates and Directives",
+    subtopics: [
+      "Templates",
+      "Using Angular templates.",
+      "Template syntax.",
+      "Directives",
+      "Built-in directives: ngIf, ngFor, ngClass, ngStyle.",
+      "Creating custom directives.",
+    ],
+  },
+  {
+    title: "Services and Dependency Injection",
+    subtopics: [
+      "Services",
+      "Creating and using services.",
+      "Singleton services and Angular providers.",
+      "Dependency Injection",
+      "Understanding dependency injection in Angular.",
+      "Using @Injectable decorator.",
+    ],
+  },
+  {
+    title: "Routing and Navigation",
+    subtopics: [
+      "Angular Router",
+      "Setting up routes.",
+      "RouterModule and routing configuration.",
+      "Nested routes.",
+      "Route guards.",
+      "Lazy loading modules.",
+    ],
+  },
+  {
+    title: "Forms and User Input",
+    subtopics: [
+      "Template-driven Forms",
+      "Creating and validating template-driven forms.",
+      "Reactive Forms",
+      "Creating and validating reactive forms.",
+      "FormBuilder and FormGroup.",
+      "Custom form validators.",
+    ],
+  },
+  {
+    title: "HTTP Client",
+    subtopics: [
+      "HTTP Requests",
+      "Setting up HttpClientModule.",
+      "Making GET, POST, PUT, DELETE requests.",
+      "Handling HTTP responses and errors.",
+      "Interceptors.",
+    ],
+  },
+  {
+    title: "State Management",
+    subtopics: [
+      "RxJS",
+      "Understanding Observables and Subjects.",
+      "Operators and pipeable operators.",
+      "Using RxJS in Angular.",
+      "NgRx (optional)",
+      "Introduction to NgRx for state management.",
+      "Store, Actions, Reducers, and Effects.",
+    ],
+  },
+  {
+    title: "Advanced Topics",
+    subtopics: [
+      "Change Detection",
+      "Understanding Angular's change detection mechanism.",
+      "OnPush change detection strategy.",
+      "Dynamic Components",
+      "Creating and using dynamic components.",
+      "Angular Animations",
+      "Using Angular’s animation library.",
+      "Unit Testing",
+      "Setting up unit tests with Jasmine and Karma.",
+      "Writing unit tests for components and services.",
+    ],
+  },
+  {
+    title: "Performance Optimization",
+    subtopics: [
+      "Lazy Loading",
+      "Implementing lazy loading for feature modules.",
+      "Ahead-of-Time (AOT) Compilation",
+      "Enabling AOT compilation.",
+      "Angular Universal",
+      "Server-side rendering with Angular Universal.",
+      "Optimization Techniques",
+      "Tree shaking and bundle optimization.",
+    ],
+  },
+  {
+    title: "Deployment",
+    subtopics: [
+      "Building for Production",
+      "Creating a production build.",
+      "Optimizing the build process.",
+      "Deployment Platforms",
+      "Deploying to Firebase, Vercel, Netlify, or other hosting services.",
+    ],
+  },
+  {
+    title: "Introduction to TypeScript",
+    subtopics: [
+      "Understand the basic concepts of TypeScript and its advantages over JavaScript.",
+      "TypeScript is a statically typed superset of JavaScript.",
+    ],
+  },
+  {
+    title: "Setting Up the Environment",
+    subtopics: [
+      "Install Node.js and npm.",
+      "Install TypeScript: npm install -g typescript",
+      "Configure TypeScript with a tsconfig.json file.",
+    ],
+  },
+  {
+    title: "Basic TypeScript Concepts",
+    subtopics: [
+      "Types: Understanding basic types (string, number, boolean, array, tuple, enum, any, void, null, undefined, never).",
+      "Interfaces: Defining object shapes using interfaces.",
+      "Classes: Understanding classes and object-oriented programming concepts.",
+      "Functions: Function types, optional and default parameters, and rest parameters.",
+      "Generics: Creating reusable components with generics.",
+    ],
+  },
+];
+
+const VueObj = [];
 
 const HTMLModals = [
   {
@@ -742,42 +1028,136 @@ const VCModals = [
 
 const JSModals = [
   {
-    id: "my_modal_5",
+    id: "my_modal_7",
     buttonText: "Resources",
     content: {
-      title: "Online resources for Learning Version Control",
+      title: "Online resources for Learning JavaScript",
       links: [
         {
-          href: "https://docs.github.com/en/get-started/getting-started-with-git",
-          text: "Github Docs",
+          href: "https://developer.mozilla.org/en-US/docs/Web/JavaScript",
+          text: "MDN Web Docs",
         },
-        { href: "https://www.w3schools.com/git/", text: "W3 Schools" },
+        { href: "https://www.w3schools.com/js/", text: "W3 Schools" },
         {
-          href: "https://www.freecodecamp.org/news/introduction-to-git-and-github/",
+          href: "https://www.freecodecamp.org/news/tag/javascript/",
           text: "Free Code Camp",
         },
       ],
     },
   },
   {
-    id: "my_modal_6",
+    id: "my_modal_8",
     buttonText: "Video Lecture",
     content: {
-      videoSrc: "https://www.youtube.com/embed/RGOj5yH7evk?si=jhWbGyQJ1m5vQpZd",
+      videoSrc: "https://www.youtube.com/embed/jS4aFq5-91M?si=PXGu0NVbPFBtcXRD",
       videoTitle: "YouTube video player",
     },
   },
 ];
 
+const ReactModals = [
+  {
+    id: "my_modal_9",
+    buttonText: "Resources",
+    content: {
+      title: "Online resources for Learning React",
+      links: [
+        {
+          href: "https://developer.mozilla.org/en-US/docs/Web/JavaScript",
+          text: "MDN Web Docs",
+        },
+        { href: "https://www.w3schools.com/js/", text: "W3 Schools" },
+        {
+          href: "https://www.freecodecamp.org/news/tag/javascript/",
+          text: "Free Code Camp",
+        },
+      ],
+    },
+  },
+  {
+    id: "my_modal_10",
+    buttonText: "Video Lecture",
+    content: {
+      videoSrc: "https://www.youtube.com/embed/jS4aFq5-91M?si=PXGu0NVbPFBtcXRD",
+      videoTitle: "YouTube video player",
+    },
+  },
+];
+
+const AngularModals = [
+  {
+    id: "my_modal_11",
+    buttonText: "Resources",
+    content: {
+      title: "Online resources for Learning Angular",
+      links: [
+        {
+          href: "https://developer.mozilla.org/en-US/docs/Web/JavaScript",
+          text: "MDN Web Docs",
+        },
+        { href: "https://www.w3schools.com/js/", text: "W3 Schools" },
+        {
+          href: "https://www.freecodecamp.org/news/tag/javascript/",
+          text: "Free Code Camp",
+        },
+      ],
+    },
+  },
+  {
+    id: "my_modal_12",
+    buttonText: "Video Lecture",
+    content: {
+      videoSrc: "https://www.youtube.com/embed/jS4aFq5-91M?si=PXGu0NVbPFBtcXRD",
+      videoTitle: "YouTube video player",
+    },
+  },
+];
+
+const VueModals = [
+  {
+    id: "my_modal_13",
+    buttonText: "Resources",
+    content: {
+      title: "Online resources for Learning Vue",
+      links: [
+        {
+          href: "https://developer.mozilla.org/en-US/docs/Web/JavaScript",
+          text: "MDN Web Docs",
+        },
+        { href: "https://www.w3schools.com/js/", text: "W3 Schools" },
+        {
+          href: "https://www.freecodecamp.org/news/tag/javascript/",
+          text: "Free Code Camp",
+        },
+      ],
+    },
+  },
+  {
+    id: "my_modal_14",
+    buttonText: "Video Lecture",
+    content: {
+      videoSrc: "https://www.youtube.com/embed/jS4aFq5-91M?si=PXGu0NVbPFBtcXRD",
+      videoTitle: "YouTube video player",
+    },
+  },
+];
+
+
+
 export {
   HTMLObj,
   CSSObj,
   VersionControlObj,
-  JavaScriptBasicObj,
-  JavaScriptAdvancedObj,
+  JavaScriptObj,
   PackageManagersObj,
-  
+  ReactObj,
+  AngularObj,
+  VueObj,
   HTMLModals,
   CSSModals,
   VCModals,
-};   // eslint-disable-line
+  JSModals,
+  ReactModals,
+  AngularModals,
+  VueModals,
+}; // eslint-disable-line

@@ -26,7 +26,7 @@ const Explore = () => {
   return (
     <div
       className={`w-full flex flex-col justify-around items-center min-h-screen ${
-        themeModeDark ? "bg-primary text-white" : "bg-light text-black"
+        themeModeDark ? "bg-primary text-white" : "bg-lightbg text-black"
       }`}>
       <div className="w-10/12 my-[5rem]">
         <h1 className="text-3xl font-bold text-bright1 text-center py-8">
@@ -39,10 +39,11 @@ const Explore = () => {
         </p>
         <p className="text-lg text-center">
           Please note that this is a comprehensive form, and it might take some
-          time to complete. However, by the end of it, you will have a clearer
-          understanding of your interests and be more confident in choosing your
-          career pathway. Let&apos;s get started on this journey to find the
-          best fit for you in the exciting world of technology!
+          time to complete as it has total of 42 questions. However, by the end
+          of it, you will have a clearer understanding of your interests and be
+          more confident in choosing your career pathway. Let&apos;s get started
+          on this journey to find the best fit for you in the exciting world of
+          technology!
         </p>
         <p className="text-end my-4 text-sm">
           <span className="text-bright2">* </span>
@@ -56,7 +57,7 @@ const Explore = () => {
             <button
               className={`${
                 hideStart ? "hidden" : "block"
-              } bg-bright1 text-white px-6 py-2 rounded-sm my-4`}
+              } btn bg-bright1 border-none text-white btn-wide my-5`}
               onClick={handeStart}>
               Start
             </button>
@@ -86,7 +87,7 @@ const Explore = () => {
                 <div className="flex justify-around mt-[3rem] border-t ">
                   <Link
                     href={"/pages/roadmaps"}
-                    className="bg-bright1 text-white px-6 py-2 rounded-sm my-4">
+                    className="btn bg-bright1 border-none text-white btn-wide">
                     Browse Roadmaps
                   </Link>
                 </div>

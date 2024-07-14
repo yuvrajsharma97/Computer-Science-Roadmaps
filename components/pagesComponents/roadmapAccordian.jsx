@@ -1,12 +1,8 @@
-"use client";
-import React, { useState } from "react";
+import { AppContext } from "@/context/appcontextwrapper";
+import React, { useContext } from "react";
 
 const RoadmapAccordian = ({ accordionData }) => {
-  const [openIndex, setOpenIndex] = useState(null);
-
-  const toggleAccordion = (index) => {
-    setOpenIndex(openIndex === index ? null : index);
-  };
+  const { themeModeDark } = useContext(AppContext);
 
   return (
     <React.Fragment>
@@ -14,7 +10,9 @@ const RoadmapAccordian = ({ accordionData }) => {
         {accordionData.map((data, index) => (
           <div
             key={index}
-            className="collapse bg-fourth border border-fourth my-5 w-4/6 mx-auto text-primary">
+            className={`${
+              themeModeDark ? "bg-cardbg2" : "bg-cardbg1"
+            } collapse border border-fourth my-5 w-4/6 mx-auto text-primary`}>
             <input type="radio" name="my-accordion-1" />
             <div className="collapse-title text-lg font-medium text-center">
               <p>{data.title}</p>

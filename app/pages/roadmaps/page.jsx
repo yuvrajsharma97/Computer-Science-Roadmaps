@@ -10,13 +10,13 @@ const Roadmaps = () => {
     {
       title: "Frontend Roadmap",
       description:
-        "Frontend Development involves using HTML, CSS, and JavaScript to create responsive and visually appealing web interfaces.",
+        "Frontend Development involves using HTML, CSS, and JavaScript to create responsive and appealing web interfaces.",
       link: "frontend-roadmap",
     },
     {
       title: "Backend Roadmap",
       description:
-        "Backend Development involves creating server-side logic, databases, and APIs using technologies like Node.js, SQL, and MongoDB.",
+        "Backend Development involves creating databases, and APIs using technologies like Node.js, SQL, and MongoDB.",
       link: "backend-roadmap",
     },
     {
@@ -31,7 +31,7 @@ const Roadmaps = () => {
     <React.Fragment>
       <div
         className={`min-h-screen flex items-center ${
-          themeModeDark ? "bg-primary text-white" : "bg-light text-black"
+          themeModeDark ? "bg-primary text-white" : "bg-lightbg text-black"
         }`}>
         <div className="flex flex-wrap justify-around w-full my-[6rem]">
           {RoadmapObject.map((roadmap, index) => (

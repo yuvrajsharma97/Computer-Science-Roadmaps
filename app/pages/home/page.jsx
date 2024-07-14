@@ -21,8 +21,7 @@ const HomePage = () => {
             <h1 className="text-4xl md:text-6xl">Computer Science</h1>
             <div className="mt-4 md:mt-[2rem] text-2xl flex flex-col md:flex-row justify-center md:justify-start">
               <span className="text-4xl">is</span>
-              <span
-                className="animation xs:text-4xl xs:mt-5 md:mt-0 md:text-4xl border-b-2 border-bright2">
+              <span className="animation xs:text-4xl xs:mt-5 md:mt-0 md:text-4xl border-b-2 border-bright2">
                 <div className="first">
                   <div>Vast</div>
                 </div>
@@ -83,9 +82,7 @@ const HomePage = () => {
             </p>
           </div>
           <div className="flex justify-center mt-[4rem] my-5">
-            <Link
-              href={"/pages/explore"}
-              className="inline-block rounded bg-bright1 px-7 py-2.5 text-sm font-sm leading-normal text-white shadow-primary-3 transition-all hover:bg-black-500 hover:shadow-primary-2 focus:bg-black-500 focus:shadow-primary-2 focus:outline-none focus:ring-0 active:bg-black-500 active:shadow-primary-2 dark:shadow-black/30 dark:hover:shadow-dark-strong dark:focus:shadow-dark-strong dark:active:shadow-dark-strong">
+            <Link href={"/pages/explore"} className="btn bg-bright1 border-none text-white btn-wide">
               EXPLORE PATHWAYS
             </Link>
           </div>

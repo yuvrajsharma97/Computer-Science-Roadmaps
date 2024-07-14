@@ -9,7 +9,7 @@ const Footer = () => {
   return (
     <footer
       className={`py-8 px-4 ${
-        themeModeDark ? "bg-black text-white" : "bg-[#b5d4e2] text-gray-700"
+        themeModeDark ? "bg-black text-white" : "bg-fourth text-primary"
       }`}>
       <div className="w-full container mx-auto flex flex-col md:flex-row justify-between items-center">
         <div className="text-center md:text-left mb-4 md:mb-0">
