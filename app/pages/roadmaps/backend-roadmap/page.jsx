@@ -27,40 +27,44 @@ const BackendRoadmap = () => {
       className={`h-full ${
         themeModeDark ? "bg-primary text-white" : "bg-lightbg text-black"
       }`}>
-      <div className="flex justify-around w-full pt-[6rem]">
-        <h3 className="text-xl font-bold text-bright2">
-          {" "}
+      <div className="flex justify-around w-full pt-[6rem] px-4 md:px-0">
+        <h3 className="text-xl md:text-xl font-bold text-bright2">
           To learn backend you should pick a language to begin with. Here are
           some popular backend languages:
         </h3>
       </div>
-      <div className="flex justify-around w-full pt-5">
+      <div
+        className={`flex flex-wrap justify-center md:flex-row w-full mt-[4rem] ${
+          showBackendFrameworks ? "h-full" : "h-[55vh]"
+        }`}>
         {backendLanguages.map((language, index) => (
-          <button
-            className="btn bg-bright1 border-none text-white btn-wide"
+          <div
             key={index}
-            onClick={() => handleBackendLanguageClick(language)}>
-            {language.title}
-          </button>
+            className="w-full md:w-1/3 lg:w-1/4 flex justify-center my-3 px-2">
+            <button
+              className="btn bg-bright1 border-none text-white btn-wide"
+              onClick={() => handleBackendLanguageClick(language)}>
+              {language.title}
+            </button>
+          </div>
         ))}
+        {showLoader && (
+          <div className="w-full">
+            <LoaderComponent />
+          </div>
+        )}
       </div>
 
-      {showLoader && (
-        <div className="pb-[2rem]">
-          {" "}
-          <LoaderComponent />{" "}
-        </div>
-      )}
       {showBackendFrameworks && (
         <>
-          <div className="w-full py-[5rem]">
-            <h1 className="text-3xl font-bold text-bright1 text-center">
+          <div className="w-full py-[5rem] px-4 md:px-0">
+            <h1 className="text-2xl md:text-3xl font-bold text-bright1 text-center">
               {backendFrameworkArray.title}
             </h1>
             <RoadmapAccordian
               accordionData={backendFrameworkArray.accordionData}
             />
-            <div className="md:flex">
+            <div className="md:flex justify-center">
               <ModalsComponent modals={backendFrameworkArray.modals} />
             </div>
           </div>
