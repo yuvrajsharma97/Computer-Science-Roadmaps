@@ -49,7 +49,7 @@ const FrontendRoadmap = () => {
       <div className="flex justify-evenly flex-wrap py-[2rem]">
         {frameworks.map((framework, index) => (
           <button
-            className="btn bg-bright1 border-none text-white btn-wide"
+            className="btn bg-bright1 border-none text-white btn-wide my-3"
             onClick={() => handleFrameworkClick(framework)}
             key={index}>
             {framework.title}
