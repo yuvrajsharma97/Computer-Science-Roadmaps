@@ -87,7 +87,7 @@ const Explore = () => {
                 <div className="flex justify-around mt-[3rem] border-t ">
                   <Link
                     href={"/pages/roadmaps"}
-                    className="btn bg-bright1 border-none text-white btn-wide">
+                    className="btn bg-bright1 border-none text-white btn-wide m-5">
                     Browse Roadmaps
                   </Link>
                 </div>

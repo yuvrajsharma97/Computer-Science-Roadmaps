@@ -1,5 +1,7 @@
 import React from "react";
 
+// Frontend Data for the Accordion and Modal Components Start...
+
 const HTMLObj = [
   {
     title: "Basic Structure of an HTML Document",
@@ -937,7 +939,181 @@ const AngularObj = [
   },
 ];
 
-const VueObj = [];
+const VueObj = [
+  {
+    title: "Introduction to Vue.js",
+    subtopics: [
+      "What is Vue.js?",
+      "Setting Up the Environment",
+      "Core Concepts",
+    ],
+  },
+  {
+    title: "What is Vue.js?",
+    subtopics: [
+      "Understand the basic concepts of Vue.js and its use in building single-page applications (SPAs).",
+      "Learn the differences between Vue.js and other frameworks like React and Angular.",
+    ],
+  },
+  {
+    title: "Setting Up the Environment",
+    subtopics: [
+      "Install Node.js and npm.",
+      "Install Vue CLI.",
+      "Create a new Vue application.",
+      "Understand the project structure.",
+    ],
+  },
+  {
+    title: "Core Concepts",
+    subtopics: ["Vue Instance", "Templates and Directives", "Components"],
+  },
+  {
+    title: "Vue Instance",
+    subtopics: [
+      "Learn about creating a Vue instance.",
+      "Understand the Vue lifecycle.",
+      "Learn about data and methods.",
+    ],
+  },
+  {
+    title: "Templates and Directives",
+    subtopics: [
+      "Understand template syntax.",
+      "Learn about directives like v-bind, v-model, v-for, v-if, v-show, v-on, etc.",
+    ],
+  },
+  {
+    title: "Components",
+    subtopics: [
+      "Learn how to create and register components.",
+      "Understand component props and custom events.",
+      "Learn about Single File Components (SFCs) with .vue files.",
+    ],
+  },
+  {
+    title: "Computed Properties and Watchers",
+    subtopics: ["Computed Properties", "Watchers"],
+  },
+  {
+    title: "Computed Properties",
+    subtopics: ["Learn how to use computed properties for derived state."],
+  },
+  {
+    title: "Watchers",
+    subtopics: [
+      "Understand how to use watchers to perform actions in response to data changes.",
+    ],
+  },
+  {
+    title: "Vue Router",
+    subtopics: [
+      "Setting Up Vue Router",
+      "Learn how to navigate between routes.",
+      "Route parameters and props.",
+    ],
+  },
+  {
+    title: "Setting Up Vue Router",
+    subtopics: [
+      "Learn how to install and configure Vue Router.",
+      "Understand how to navigate between routes.",
+      "Learn about route parameters and props.",
+    ],
+  },
+  {
+    title: "Vuex for State Management",
+    subtopics: [
+      "Setting Up Vuex",
+      "Learn about state, getters, mutations, and actions.",
+    ],
+  },
+  {
+    title: "Setting Up Vuex",
+    subtopics: [
+      "Learn how to install Vuex.",
+      "Understand how to create a store.",
+      "Learn about state, getters, mutations, and actions.",
+    ],
+  },
+  {
+    title: "Forms and User Input",
+    subtopics: [
+      "Handling Forms",
+      "Form validation with Vuelidate or custom validation.",
+      "Learn how to bind form inputs using v-model.",
+      "Understand form validation with Vuelidate or custom validation.",
+    ],
+  },
+
+  {
+    title: "HTTP Requests",
+    subtopics: [
+      "Using Axios",
+      "Learn how to install and use Axios for making HTTP requests to fetch data from APIs.",
+    ],
+  },
+
+  {
+    title: "Vue Directives",
+    subtopics: [
+      "Custom Directives",
+      "Learn how to create and use custom directives.",
+    ],
+  },
+  {
+    title: "Filters",
+    subtopics: ["Learn how to use filters to format text."],
+  },
+  {
+    title: "Mixins",
+    subtopics: ["Understand how to use mixins to reuse code."],
+  },
+  {
+    title: "Plugins and Third-Party Libraries",
+    subtopics: [
+      "Using Plugins",
+      "Third-Party Libraries",
+      "Learn how to install and use Vue plugins like Vue Router, Vuex, Vue i18n, etc.",
+    ],
+  },
+  {
+    title: "Third-Party Libraries",
+    subtopics: [
+      "Learn how to integrate third-party libraries like Vuetify, Element UI, Bootstrap Vue, etc.",
+    ],
+  },
+
+  {
+    title: "Performance Optimization",
+    subtopics: [
+      "Learn how to implement lazy loading for components and routes.",
+      "Understand how to use Webpack for code splitting.",
+      "Learn how to use Vue DevTools to debug and optimize Vue applications.",
+    ],
+  },
+  {
+    title: "Building for Production",
+    subtopics: [
+      "Learn how to create a production build.",
+      "Understand how to optimize the build process.",
+    ],
+  },
+  {
+    title: "Advanced Vue.js Features",
+    subtopics: ["Vue 3 Features", "Server-Side Rendering (SSR)"],
+  },
+  {
+    title: "Vue 3 Features",
+    subtopics: [
+      "Learn about the Composition API, Teleport, Fragments, and Custom Directives.",
+    ],
+  },
+  {
+    title: "Server-Side Rendering (SSR)",
+    subtopics: ["Learn how to use Nuxt.js for SSR."],
+  },
+];
 
 const HTMLModals = [
   {
@@ -1063,13 +1239,16 @@ const ReactModals = [
       title: "Online resources for Learning React",
       links: [
         {
-          href: "https://developer.mozilla.org/en-US/docs/Web/JavaScript",
-          text: "MDN Web Docs",
+          href: "https://react.dev/",
+          text: "React Dev Docs",
         },
-        { href: "https://www.w3schools.com/js/", text: "W3 Schools" },
         {
-          href: "https://www.freecodecamp.org/news/tag/javascript/",
-          text: "Free Code Camp",
+          href: "https://www.w3schools.com/whatis/whatis_react.asp",
+          text: "W3 Schools",
+        },
+        {
+          href: "https://v2.scrimba.com/learn-react-c0e",
+          text: "Scrimba",
         },
       ],
     },
@@ -1078,7 +1257,7 @@ const ReactModals = [
     id: "my_modal_10",
     buttonText: "Video Lecture",
     content: {
-      videoSrc: "https://www.youtube.com/embed/jS4aFq5-91M?si=PXGu0NVbPFBtcXRD",
+      videoSrc: "https://www.youtube.com/embed/bMknfKXIFA8?si=NYjmBJxy94Dusgki",
       videoTitle: "YouTube video player",
     },
   },
@@ -1092,13 +1271,13 @@ const AngularModals = [
       title: "Online resources for Learning Angular",
       links: [
         {
-          href: "https://developer.mozilla.org/en-US/docs/Web/JavaScript",
-          text: "MDN Web Docs",
+          href: "https://angular.dev/tutorials/learn-angular",
+          text: "Angular Docs",
         },
-        { href: "https://www.w3schools.com/js/", text: "W3 Schools" },
+        { href: "https://www.w3schools.com/angular/", text: "W3 Schools" },
         {
-          href: "https://www.freecodecamp.org/news/tag/javascript/",
-          text: "Free Code Camp",
+          href: "https://www.simplilearn.com/tutorials/angular-tutorial",
+          text: "Simplilearn",
         },
       ],
     },
@@ -1107,7 +1286,7 @@ const AngularModals = [
     id: "my_modal_12",
     buttonText: "Video Lecture",
     content: {
-      videoSrc: "https://www.youtube.com/embed/jS4aFq5-91M?si=PXGu0NVbPFBtcXRD",
+      videoSrc: "https://www.youtube.com/embed/3qBXWUpoPHo?si=ykz0pt4Go6hw86Fe",
       videoTitle: "YouTube video player",
     },
   },
@@ -1121,13 +1300,13 @@ const VueModals = [
       title: "Online resources for Learning Vue",
       links: [
         {
-          href: "https://developer.mozilla.org/en-US/docs/Web/JavaScript",
-          text: "MDN Web Docs",
+          href: "https://vuejs.org/",
+          text: "Vue Js Docs",
         },
-        { href: "https://www.w3schools.com/js/", text: "W3 Schools" },
+        { href: "https://www.w3schools.com/vue/", text: "W3 Schools" },
         {
-          href: "https://www.freecodecamp.org/news/tag/javascript/",
-          text: "Free Code Camp",
+          href: "https://v2.scrimba.com/learn-vuejs-c020",
+          text: "Scrimba",
         },
       ],
     },
@@ -1136,28 +1315,1078 @@ const VueModals = [
     id: "my_modal_14",
     buttonText: "Video Lecture",
     content: {
-      videoSrc: "https://www.youtube.com/embed/jS4aFq5-91M?si=PXGu0NVbPFBtcXRD",
+      videoSrc: "https://www.youtube.com/embed/FXpIoQ_rT_c?si=U16OTo6EKV5va80y",
+      videoTitle: "YouTube video player",
+    },
+  },
+];
+
+const sections = [
+  {
+    title: "HTML",
+    accordionData: HTMLObj,
+    modals: HTMLModals,
+    paddingTop: "pt-[6rem]",
+  },
+  {
+    title: "CSS",
+    accordionData: CSSObj,
+    modals: CSSModals,
+    paddingTop: "pt-[3rem]",
+  },
+  {
+    title: "Version Control",
+    accordionData: VersionControlObj,
+    modals: VCModals,
+    paddingTop: "pt-[3rem]",
+  },
+  {
+    title: "JavaScript",
+    accordionData: JavaScriptObj,
+    modals: JSModals,
+    paddingTop: "pt-[3rem]",
+  },
+  {
+    title: "Package Managers",
+    accordionData: PackageManagersObj,
+    modals: [],
+    paddingTop: "pt-[3rem]",
+  },
+];
+
+const frameworks = [
+  {
+    title: "React",
+    accordionData: ReactObj,
+    modals: ReactModals,
+  },
+  {
+    title: "Angular",
+    accordionData: AngularObj,
+    modals: AngularModals,
+  },
+  {
+    title: "Vue",
+    accordionData: VueObj,
+    modals: VueModals,
+  },
+];
+
+export { sections, frameworks }; 
+
+// Frontend Data for the Accordion and Modal Components End...
+
+// Backend Data for the Accordion and Modal Components Start...
+
+const JavaScriptBackendObj = [
+  {
+    title: "Introduction to Backend Development",
+    subtopics: [
+      "What is Backend Development?",
+      "Setting Up the Environment",
+      "Core Concepts",
+    ],
+  },
+  {
+    title: "What is Backend Development?",
+    subtopics: [
+      "Understand the basic concepts of backend development and its role in web applications.",
+      "Learn the difference between frontend and backend development.",
+    ],
+  },
+  {
+    title: "Setting Up the Environment",
+    subtopics: [
+      "Install Node.js and npm.",
+      "Configure your development environment with an IDE like Visual Studio Code.",
+    ],
+  },
+  {
+    title: "Core Concepts",
+    subtopics: [
+      "Node.js",
+      "NPM (Node Package Manager)",
+      "Asynchronous Programming",
+    ],
+  },
+  {
+    title: "Node.js",
+    subtopics: [
+      "Understand what Node.js is and its use in backend development.",
+      "Learn how to set up a Node.js project.",
+    ],
+  },
+  {
+    title: "NPM (Node Package Manager)",
+    subtopics: ["Learn how to use npm to manage dependencies and scripts."],
+  },
+  {
+    title: "Asynchronous Programming",
+    subtopics: [
+      "Understand the concepts of callbacks, promises, and async/await.",
+    ],
+  },
+  {
+    title: "Web Servers",
+    subtopics: ["HTTP Protocol", "Express.js"],
+  },
+  {
+    title: "HTTP Protocol",
+    subtopics: [
+      "Learn the basics of the HTTP protocol.",
+      "Understand HTTP methods: GET, POST, PUT, DELETE.",
+    ],
+  },
+  {
+    title: "Express.js",
+    subtopics: [
+      "Learn about Express.js and its role in building web servers.",
+      "Understand routing, middleware, and handling requests and responses.",
+    ],
+  },
+  {
+    title: "RESTful APIs",
+    subtopics: ["REST Architecture", "Building RESTful APIs with Express"],
+  },
+  {
+    title: "REST Architecture",
+    subtopics: [
+      "Understand the principles of REST (Representational State Transfer).",
+      "Learn about RESTful API design.",
+    ],
+  },
+  {
+    title: "Building RESTful APIs with Express",
+    subtopics: [
+      "Learn how to create routes, handle different HTTP methods, and work with query parameters and request bodies.",
+    ],
+  },
+  {
+    title: "Databases",
+    subtopics: ["Relational Databases", "NoSQL Databases"],
+  },
+  {
+    title: "Relational Databases",
+    subtopics: [
+      "Understand the basics of relational databases.",
+      "Learn about SQL and database management systems like MySQL and PostgreSQL.",
+    ],
+  },
+  {
+    title: "NoSQL Databases",
+    subtopics: [
+      "Understand the basics of NoSQL databases.",
+      "Learn about MongoDB and its usage with Mongoose.",
+    ],
+  },
+  {
+    title: "Authentication and Authorization",
+    subtopics: ["Authentication", "Authorization"],
+  },
+  {
+    title: "Authentication",
+    subtopics: [
+      "Understand different authentication methods: sessions, tokens, OAuth.",
+      "Learn how to implement authentication using JWT (JSON Web Tokens).",
+    ],
+  },
+  {
+    title: "Authorization",
+    subtopics: [
+      "Understand the difference between authentication and authorization.",
+      "Learn how to implement role-based access control.",
+    ],
+  },
+  {
+    title: "Data Validation and Sanitization",
+    subtopics: ["Validation", "Sanitization"],
+  },
+  {
+    title: "Validation",
+    subtopics: [
+      "Learn how to validate user input on the server-side.",
+      "Use libraries like Joi for data validation.",
+    ],
+  },
+  {
+    title: "Sanitization",
+    subtopics: [
+      "Understand the importance of data sanitization to prevent security vulnerabilities.",
+    ],
+  },
+  {
+    title: "Error Handling and Logging",
+    subtopics: ["Error Handling", "Logging"],
+  },
+  {
+    title: "Error Handling",
+    subtopics: [
+      "Learn how to handle errors gracefully in your applications.",
+      "Understand the concept of try-catch blocks and centralized error handling.",
+    ],
+  },
+  {
+    title: "Logging",
+    subtopics: [
+      "Understand the importance of logging.",
+      "Learn how to use logging libraries like Winston and Morgan.",
+    ],
+  },
+  {
+    title: "Security",
+    subtopics: ["Common Security Threats", "Implementing Security"],
+  },
+  {
+    title: "Common Security Threats",
+    subtopics: [
+      "Learn about common security threats: SQL injection, XSS, CSRF, etc.",
+    ],
+  },
+  {
+    title: "Implementing Security",
+    subtopics: [
+      "Understand how to implement security measures: HTTPS, CORS, Helmet, rate limiting.",
+    ],
+  },
+  {
+    title: "Testing",
+    subtopics: ["Unit Testing", "Integration Testing"],
+  },
+  {
+    title: "Unit Testing",
+    subtopics: [
+      "Learn the basics of unit testing.",
+      "Use testing frameworks like Mocha, Chai, and Jest.",
+    ],
+  },
+  {
+    title: "Integration Testing",
+    subtopics: [
+      "Understand integration testing.",
+      "Learn how to test your APIs using tools like Postman and supertest.",
+    ],
+  },
+  {
+    title: "Deployment",
+    subtopics: [
+      "Preparing for Deployment",
+      "Deployment Platforms",
+      "CI/CD (Continuous Integration/Continuous Deployment)",
+    ],
+  },
+  {
+    title: "Preparing for Deployment",
+    subtopics: [
+      "Understand the steps needed to prepare your application for deployment.",
+    ],
+  },
+  {
+    title: "Deployment Platforms",
+    subtopics: [
+      "Learn about different deployment platforms: Heroku, AWS, DigitalOcean, Vercel, etc.",
+    ],
+  },
+  {
+    title: "CI/CD (Continuous Integration/Continuous Deployment)",
+    subtopics: [
+      "Understand the concepts of CI/CD.",
+      "Learn how to set up CI/CD pipelines using tools like GitHub Actions, GitLab CI, Jenkins, etc.",
+    ],
+  },
+  {
+    title: "Advanced Topics",
+    subtopics: ["WebSockets", "GraphQL", "Microservices"],
+  },
+  {
+    title: "WebSockets",
+    subtopics: [
+      "Understand the basics of WebSockets.",
+      "Learn how to implement real-time communication using libraries like Socket.io.",
+    ],
+  },
+  {
+    title: "GraphQL",
+    subtopics: [
+      "Understand the basics of GraphQL.",
+      "Learn how to build GraphQL APIs using Apollo Server.",
+    ],
+  },
+  {
+    title: "Microservices",
+    subtopics: [
+      "Learn the concepts of microservices architecture.",
+      "Understand how to break down a monolithic application into microservices.",
+    ],
+  },
+  {
+    title: "DevOps for Backend Developers",
+    subtopics: ["Docker", "Kubernetes"],
+  },
+  {
+    title: "Docker",
+    subtopics: [
+      "Understand the basics of Docker.",
+      "Learn how to containerize your applications.",
+    ],
+  },
+  {
+    title: "Kubernetes",
+    subtopics: [
+      "Understand the basics of Kubernetes.",
+      "Learn how to manage containerized applications at scale.",
+    ],
+  },
+];
+
+const JavaBackendObj = [
+  {
+    title: "Introduction to Backend Development",
+    subtopics: ["What is Backend Development?", "Setting Up the Environment"],
+  },
+  {
+    title: "What is Backend Development?",
+    subtopics: [
+      "Understand the basic concepts of backend development and its role in web applications.",
+      "Learn the difference between frontend and backend development.",
+    ],
+  },
+  {
+    title: "Setting Up the Environment",
+    subtopics: [
+      "Install JDK (Java Development Kit).",
+      "Set up your development environment with an IDE like IntelliJ IDEA, Eclipse, or VS Code.",
+    ],
+  },
+  {
+    title: "Core Concepts",
+    subtopics: ["Java Fundamentals", "Maven and Gradle"],
+  },
+  {
+    title: "Java Fundamentals",
+    subtopics: [
+      "Review Java basics: variables, data types, operators, control flow statements, and OOP principles (encapsulation, inheritance, polymorphism, and abstraction).",
+      "Learn about Java Collections Framework.",
+    ],
+  },
+  {
+    title: "Maven and Gradle",
+    subtopics: [
+      "Understand the basics of build tools like Maven and Gradle.",
+      "Learn how to manage dependencies and build Java projects.",
+    ],
+  },
+  {
+    title: "Web Servers and Servlet API",
+    subtopics: ["Introduction to Web Servers", "Java Servlet API"],
+  },
+  {
+    title: "Introduction to Web Servers",
+    subtopics: [
+      "Understand the basics of web servers.",
+      "Learn about popular web servers like Apache Tomcat, Jetty, and Undertow.",
+    ],
+  },
+  {
+    title: "Java Servlet API",
+    subtopics: [
+      "Understand the Servlet lifecycle.",
+      "Learn how to handle HTTP requests and responses with Servlets.",
+    ],
+  },
+  {
+    title: "Spring Framework",
+    subtopics: [
+      "Introduction to Spring Framework",
+      "Spring Core",
+      "Spring Boot",
+    ],
+  },
+  {
+    title: "Introduction to Spring Framework",
+    subtopics: [
+      "Understand the basics of the Spring Framework.",
+      "Learn about the benefits of using Spring for backend development.",
+    ],
+  },
+  {
+    title: "Spring Core",
+    subtopics: [
+      "Learn about dependency injection and inversion of control.",
+      "Understand how to configure Spring beans.",
+    ],
+  },
+  {
+    title: "Spring Boot",
+    subtopics: [
+      "Learn about Spring Boot and its features.",
+      "Understand how to create a Spring Boot application.",
+      "Learn about Spring Boot auto-configuration and Spring Initializr.",
+    ],
+  },
+  {
+    title: "Building RESTful APIs",
+    subtopics: ["REST Architecture", "Building RESTful APIs with Spring Boot"],
+  },
+  {
+    title: "REST Architecture",
+    subtopics: [
+      "Understand the principles of REST (Representational State Transfer).",
+      "Learn about RESTful API design.",
+    ],
+  },
+  {
+    title: "Building RESTful APIs with Spring Boot",
+    subtopics: [
+      "Learn how to create RESTful endpoints.",
+      "Understand how to handle HTTP methods: GET, POST, PUT, DELETE.",
+    ],
+  },
+  {
+    title: "Databases",
+    subtopics: ["Relational Databases", "NoSQL Databases", "JPA and Hibernate"],
+  },
+  {
+    title: "Relational Databases",
+    subtopics: [
+      "Understand the basics of relational databases.",
+      "Learn about SQL and database management systems like MySQL, PostgreSQL, and Oracle.",
+    ],
+  },
+  {
+    title: "NoSQL Databases",
+    subtopics: [
+      "Understand the basics of NoSQL databases.",
+      "Learn about MongoDB and other NoSQL databases.",
+    ],
+  },
+  {
+    title: "JPA and Hibernate",
+    subtopics: [
+      "Understand the Java Persistence API (JPA).",
+      "Learn how to use Hibernate for ORM (Object-Relational Mapping).",
+    ],
+  },
+  {
+    title: "Authentication and Authorization",
+    subtopics: ["Authentication", "Authorization"],
+  },
+  {
+    title: "Authentication",
+    subtopics: [
+      "Understand different authentication methods: sessions, tokens, OAuth.",
+      "Learn how to implement authentication using Spring Security.",
+    ],
+  },
+  {
+    title: "Authorization",
+    subtopics: [
+      "Understand the difference between authentication and authorization.",
+      "Learn how to implement role-based access control using Spring Security.",
+    ],
+  },
+  {
+    title: "Data Validation and Sanitization",
+    subtopics: ["Validation", "Sanitization"],
+  },
+  {
+    title: "Validation",
+    subtopics: [
+      "Learn how to validate user input on the server-side using Spring Validator.",
+    ],
+  },
+  {
+    title: "Sanitization",
+    subtopics: [
+      "Understand the importance of data sanitization to prevent security vulnerabilities.",
+    ],
+  },
+  {
+    title: "Error Handling and Logging",
+    subtopics: ["Error Handling", "Logging"],
+  },
+  {
+    title: "Error Handling",
+    subtopics: [
+      "Learn how to handle errors gracefully in your applications.",
+      "Understand the concept of exception handling and centralized error handling in Spring Boot.",
+    ],
+  },
+  {
+    title: "Logging",
+    subtopics: [
+      "Understand the importance of logging.",
+      "Learn how to use logging frameworks like SLF4J, Logback, and Log4j.",
+    ],
+  },
+  {
+    title: "Security",
+    subtopics: ["Common Security Threats", "Implementing Security"],
+  },
+  {
+    title: "Common Security Threats",
+    subtopics: [
+      "Learn about common security threats: SQL injection, XSS, CSRF, etc.",
+    ],
+  },
+  {
+    title: "Implementing Security",
+    subtopics: [
+      "Understand how to implement security measures: HTTPS, CORS, Spring Security, rate limiting.",
+    ],
+  },
+  {
+    title: "Testing",
+    subtopics: ["Unit Testing", "Integration Testing", "Mocking"],
+  },
+  {
+    title: "Unit Testing",
+    subtopics: [
+      "Learn the basics of unit testing with JUnit.",
+      "Understand how to write unit tests for Java applications.",
+    ],
+  },
+  {
+    title: "Integration Testing",
+    subtopics: [
+      "Learn how to write integration tests for your applications.",
+      "Use Spring Boot's testing support for integration testing.",
+    ],
+  },
+  {
+    title: "Mocking",
+    subtopics: [
+      "Understand the concept of mocking.",
+      "Learn how to use Mockito for creating mock objects in tests.",
+    ],
+  },
+  {
+    title: "Performance Optimization",
+    subtopics: ["Profiling and Monitoring", "Caching"],
+  },
+  {
+    title: "Profiling and Monitoring",
+    subtopics: [
+      "Learn about profiling and monitoring tools like JProfiler, VisualVM, and Spring Boot Actuator.",
+    ],
+  },
+  {
+    title: "Caching",
+    subtopics: [
+      "Understand the basics of caching.",
+      "Learn how to implement caching in your applications using Spring Cache.",
+    ],
+  },
+  {
+    title: "Deployment",
+    subtopics: [
+      "Preparing for Deployment",
+      "Deployment Platforms",
+      "CI/CD (Continuous Integration/Continuous Deployment)",
+    ],
+  },
+  {
+    title: "Preparing for Deployment",
+    subtopics: [
+      "Understand the steps needed to prepare your application for deployment.",
+    ],
+  },
+  {
+    title: "Deployment Platforms",
+    subtopics: [
+      "Learn about different deployment platforms: Heroku, AWS, DigitalOcean, etc.",
+    ],
+  },
+  {
+    title: "CI/CD (Continuous Integration/Continuous Deployment)",
+    subtopics: [
+      "Understand the concepts of CI/CD.",
+      "Learn how to set up CI/CD pipelines using tools like Jenkins, GitHub Actions, GitLab CI, etc.",
+    ],
+  },
+  {
+    title: "Advanced Topics",
+    subtopics: ["Microservices Architecture", "WebSockets", "GraphQL"],
+  },
+  {
+    title: "Microservices Architecture",
+    subtopics: [
+      "Understand the concepts of microservices architecture.",
+      "Learn about Spring Cloud for building microservices.",
+    ],
+  },
+  {
+    title: "WebSockets",
+    subtopics: [
+      "Understand the basics of WebSockets.",
+      "Learn how to implement real-time communication using Spring WebSocket.",
+    ],
+  },
+  {
+    title: "GraphQL",
+    subtopics: [
+      "Understand the basics of GraphQL.",
+      "Learn how to build GraphQL APIs using Spring Boot.",
+    ],
+  },
+  {
+    title: "DevOps for Backend Developers",
+    subtopics: ["Docker", "Kubernetes"],
+  },
+  {
+    title: "Docker",
+    subtopics: [
+      "Understand the basics of Docker.",
+      "Learn how to containerize your applications.",
+    ],
+  },
+  {
+    title: "Kubernetes",
+    subtopics: [
+      "Understand the basics of Kubernetes.",
+      "Learn how to manage containerized applications at scale.",
+    ],
+  },
+];
+
+const PythonBackendObj = [
+  {
+    title: "Introduction to Backend Development",
+    subtopics: ["What is Backend Development?", "Setting Up the Environment"],
+  },
+  {
+    title: "What is Backend Development?",
+    subtopics: [
+      "Understand the basic concepts of backend development and its role in web applications.",
+      "Learn the difference between frontend and backend development.",
+    ],
+  },
+  {
+    title: "Setting Up the Environment",
+    subtopics: [
+      "Install Python.",
+      "Set up your development environment with an IDE like PyCharm, VS Code, or Jupyter Notebook.",
+    ],
+  },
+  {
+    title: "Core Concepts",
+    subtopics: ["Python Fundamentals", "Pip and Virtual Environments"],
+  },
+  {
+    title: "Python Fundamentals",
+    subtopics: [
+      "Review Python basics: variables, data types, operators, control flow statements, and OOP principles (encapsulation, inheritance, polymorphism, and abstraction).",
+      "Learn about Python data structures: lists, tuples, sets, and dictionaries.",
+    ],
+  },
+  {
+    title: "Pip and Virtual Environments",
+    subtopics: [
+      "Understand how to manage dependencies using pip.",
+      "Learn how to create and use virtual environments with venv or virtualenv.",
+    ],
+  },
+  {
+    title: "Web Servers and WSGI",
+    subtopics: [
+      "Introduction to Web Servers",
+      "WSGI (Web Server Gateway Interface)",
+    ],
+  },
+  {
+    title: "Introduction to Web Servers",
+    subtopics: [
+      "Understand the basics of web servers.",
+      "Learn about popular web servers like Gunicorn, uWSGI, and Daphne.",
+    ],
+  },
+  {
+    title: "WSGI (Web Server Gateway Interface)",
+    subtopics: [
+      "Understand the WSGI standard and its role in Python web applications.",
+      "Learn how to create a simple WSGI application.",
+    ],
+  },
+  {
+    title: "Web Frameworks",
+    subtopics: ["Flask", "Django", "FastAPI"],
+  },
+  {
+    title: "Flask",
+    subtopics: [
+      "Understand the basics of Flask, a micro web framework.",
+      "Learn how to create routes, handle requests, and manage templates.",
+    ],
+  },
+  {
+    title: "Django",
+    subtopics: [
+      "Understand the basics of Django, a full-stack web framework.",
+      "Learn about Django's MTV architecture (Model-Template-View).",
+      "Learn how to create models, views, and templates in Django.",
+    ],
+  },
+  {
+    title: "FastAPI",
+    subtopics: [
+      "Understand the basics of FastAPI, a modern web framework for building APIs.",
+      "Learn how to create endpoints, handle requests, and use FastAPI's built-in validation.",
+    ],
+  },
+  {
+    title: "Building RESTful APIs",
+    subtopics: [
+      "REST Architecture",
+      "Building RESTful APIs with Flask",
+      "Building RESTful APIs with Django",
+      "Building RESTful APIs with FastAPI",
+    ],
+  },
+  {
+    title: "REST Architecture",
+    subtopics: [
+      "Understand the principles of REST (Representational State Transfer).",
+      "Learn about RESTful API design.",
+    ],
+  },
+  {
+    title: "Building RESTful APIs with Flask",
+    subtopics: [
+      "Learn how to create RESTful endpoints in Flask.",
+      "Understand how to handle HTTP methods: GET, POST, PUT, DELETE in Flask.",
+    ],
+  },
+  {
+    title: "Building RESTful APIs with Django",
+    subtopics: [
+      "Learn how to create RESTful endpoints using Django REST Framework (DRF).",
+      "Understand how to handle HTTP methods: GET, POST, PUT, DELETE in DRF.",
+    ],
+  },
+  {
+    title: "Building RESTful APIs with FastAPI",
+    subtopics: [
+      "Learn how to create RESTful endpoints in FastAPI.",
+      "Understand how to handle HTTP methods: GET, POST, PUT, DELETE in FastAPI.",
+    ],
+  },
+  {
+    title: "Databases",
+    subtopics: [
+      "Relational Databases",
+      "NoSQL Databases",
+      "ORM (Object-Relational Mapping)",
+    ],
+  },
+  {
+    title: "Relational Databases",
+    subtopics: [
+      "Understand the basics of relational databases.",
+      "Learn about SQL and database management systems like PostgreSQL, MySQL, and SQLite.",
+    ],
+  },
+  {
+    title: "NoSQL Databases",
+    subtopics: [
+      "Understand the basics of NoSQL databases.",
+      "Learn about MongoDB and other NoSQL databases.",
+    ],
+  },
+  {
+    title: "ORM (Object-Relational Mapping)",
+    subtopics: [
+      "Understand the concept of ORM.",
+      "Learn how to use ORM tools like SQLAlchemy for Flask and Django ORM for Django.",
+    ],
+  },
+  {
+    title: "Authentication and Authorization",
+    subtopics: ["Authentication", "Authorization"],
+  },
+  {
+    title: "Authentication",
+    subtopics: [
+      "Understand different authentication methods: sessions, tokens, OAuth.",
+      "Learn how to implement authentication using libraries like Flask-Login, Django Auth, and FastAPI OAuth2.",
+    ],
+  },
+  {
+    title: "Authorization",
+    subtopics: [
+      "Understand the difference between authentication and authorization.",
+      "Learn how to implement role-based access control.",
+    ],
+  },
+  {
+    title: "Data Validation and Serialization",
+    subtopics: ["Validation", "Serialization"],
+  },
+  {
+    title: "Validation",
+    subtopics: [
+      "Learn how to validate user input on the server-side.",
+      "Use libraries like Marshmallow for validation in Flask, Django Forms for Django, and Pydantic for FastAPI.",
+    ],
+  },
+  {
+    title: "Serialization",
+    subtopics: [
+      "Understand the concept of serialization.",
+      "Learn how to serialize and deserialize data using Marshmallow, Django REST Framework Serializers, and Pydantic.",
+    ],
+  },
+  {
+    title: "Error Handling and Logging",
+    subtopics: ["Error Handling", "Logging"],
+  },
+  {
+    title: "Error Handling",
+    subtopics: [
+      "Learn how to handle errors gracefully in your applications.",
+      "Understand the concept of exception handling and centralized error handling in Flask, Django, and FastAPI.",
+    ],
+  },
+  {
+    title: "Logging",
+    subtopics: [
+      "Understand the importance of logging.",
+      "Learn how to use logging libraries like Python's built-in logging module, Loguru, and structlog.",
+    ],
+  },
+  {
+    title: "Security",
+    subtopics: ["Common Security Threats", "Implementing Security"],
+  },
+  {
+    title: "Common Security Threats",
+    subtopics: [
+      "Learn about common security threats: SQL injection, XSS, CSRF, etc.",
+    ],
+  },
+  {
+    title: "Implementing Security",
+    subtopics: [
+      "Understand how to implement security measures: HTTPS, CORS, security headers, rate limiting.",
+      "Learn how to use security libraries and tools like Flask-SeaSurf, Django Security Middleware, and FastAPI Security.",
+    ],
+  },
+  {
+    title: "Testing",
+    subtopics: ["Unit Testing", "Integration Testing", "Mocking"],
+  },
+  {
+    title: "Unit Testing",
+    subtopics: [
+      "Learn the basics of unit testing with unittest and pytest.",
+      "Understand how to write unit tests for Python applications.",
+    ],
+  },
+  {
+    title: "Integration Testing",
+    subtopics: [
+      "Learn how to write integration tests for your applications.",
+      "Use tools like pytest-django for Django and HTTPX for FastAPI.",
+    ],
+  },
+  {
+    title: "Mocking",
+    subtopics: [
+      "Understand the concept of mocking.",
+      "Learn how to use unittest.mock and pytest-mock for creating mock objects in tests.",
+    ],
+  },
+  {
+    title: "Performance Optimization",
+    subtopics: ["Profiling and Monitoring", "Caching"],
+  },
+  {
+    title: "Profiling and Monitoring",
+    subtopics: [
+      "Learn about profiling and monitoring tools like cProfile, Py-Spy, New Relic, and Prometheus.",
+    ],
+  },
+  {
+    title: "Caching",
+    subtopics: [
+      "Understand the basics of caching.",
+      "Learn how to implement caching using Redis, Flask-Caching, Django Cache Framework, and FastAPI Cache.",
+    ],
+  },
+  {
+    title: "Deployment",
+    subtopics: [
+      "Preparing for Deployment",
+      "Deployment Platforms",
+      "CI/CD (Continuous Integration/Continuous Deployment)",
+    ],
+  },
+  {
+    title: "Preparing for Deployment",
+    subtopics: [
+      "Understand the steps needed to prepare your application for deployment.",
+    ],
+  },
+  {
+    title: "Deployment Platforms",
+    subtopics: [
+      "Learn about different deployment platforms: Heroku, AWS, DigitalOcean, Google Cloud Platform, and Azure.",
+    ],
+  },
+  {
+    title: "CI/CD (Continuous Integration/Continuous Deployment)",
+    subtopics: [
+      "Understand the concepts of CI/CD.",
+      "Learn how to set up CI/CD pipelines using tools like GitHub Actions, GitLab CI, Jenkins, and CircleCI.",
+    ],
+  },
+  {
+    title: "Advanced Topics",
+    subtopics: ["Microservices Architecture", "WebSockets", "GraphQL"],
+  },
+  {
+    title: "Microservices Architecture",
+    subtopics: [
+      "Understand the concepts of microservices architecture.",
+      "Learn about tools and frameworks for building microservices in Python like Flask, FastAPI, and gRPC.",
+    ],
+  },
+  {
+    title: "WebSockets",
+    subtopics: [
+      "Understand the basics of WebSockets.",
+      "Learn how to implement real-time communication using libraries like Flask-SocketIO, Django Channels, and FastAPI WebSockets.",
+    ],
+  },
+  {
+    title: "GraphQL",
+    subtopics: [
+      "Understand the basics of GraphQL.",
+      "Learn how to build GraphQL APIs using libraries like Graphene for Django and Ariadne for FastAPI.",
+    ],
+  },
+  {
+    title: "DevOps for Backend Developers",
+    subtopics: ["Docker", "Kubernetes"],
+  },
+  {
+    title: "Docker",
+    subtopics: [
+      "Understand the basics of Docker.",
+      "Learn how to containerize your applications.",
+    ],
+  },
+  {
+    title: "Kubernetes",
+    subtopics: [
+      "Understand the basics of Kubernetes.",
+      "Learn how to manage containerized applications at scale.",
+    ],
+  },
+];
+
+const JavaScriptBackendModals = [
+  {
+    id: "my_modal_1",
+    buttonText: "Resources",
+    content: {
+      title: "Online resources for Learning Backend with JavaScript",
+      links: [
+        {
+          href: "https://vuejs.org/",
+          text: "Vue Js Docs",
+        },
+        { href: "https://www.w3schools.com/vue/", text: "W3 Schools" },
+        {
+          href: "https://v2.scrimba.com/learn-vuejs-c020",
+          text: "Scrimba",
+        },
+      ],
+    },
+  },
+  {
+    id: "my_modal_2",
+    buttonText: "Video Lecture",
+    content: {
+      videoSrc: "https://www.youtube.com/embed/FXpIoQ_rT_c?si=U16OTo6EKV5va80y",
+      videoTitle: "YouTube video player",
+    },
+  },
+];
+
+const JavaBackendModals = [
+  {
+    id: "my_modal_3",
+    buttonText: "Resources",
+    content: {
+      title: "Online resources for Learning Backend with Java",
+      links: [
+        {
+          href: "https://vuejs.org/",
+          text: "Vue Js Docs",
+        },
+        { href: "https://www.w3schools.com/vue/", text: "W3 Schools" },
+        {
+          href: "https://v2.scrimba.com/learn-vuejs-c020",
+          text: "Scrimba",
+        },
+      ],
+    },
+  },
+  {
+    id: "my_modal_4",
+    buttonText: "Video Lecture",
+    content: {
+      videoSrc: "https://www.youtube.com/embed/FXpIoQ_rT_c?si=U16OTo6EKV5va80y",
+      videoTitle: "YouTube video player",
+    },
+  },
+];
+
+const PythonBackendModals = [
+  {
+    id: "my_modal_5",
+    buttonText: "Resources",
+    content: {
+      title: "Online resources for Learning Backend with Python",
+      links: [
+        {
+          href: "https://vuejs.org/",
+          text: "Vue Js Docs",
+        },
+        { href: "https://www.w3schools.com/vue/", text: "W3 Schools" },
+        {
+          href: "https://v2.scrimba.com/learn-vuejs-c020",
+          text: "Scrimba",
+        },
+      ],
+    },
+  },
+  {
+    id: "my_modal_6",
+    buttonText: "Video Lecture",
+    content: {
+      videoSrc: "https://www.youtube.com/embed/FXpIoQ_rT_c?si=U16OTo6EKV5va80y",
       videoTitle: "YouTube video player",
     },
   },
 ];
 
 
+const backendLanguages = [
+  {
+    title: "JavaScript",
+    accordionData: JavaScriptBackendObj,
+    modals: JavaScriptBackendModals,
+  },
+  {
+    title: "Python",
+    accordionData: PythonBackendObj,
+    modals: PythonBackendModals,
+  },
+  {
+    title: "Java",
+    accordionData: JavaBackendObj,
+    modals: JavaBackendModals,
+  },
+];
 
-export {
-  HTMLObj,
-  CSSObj,
-  VersionControlObj,
-  JavaScriptObj,
-  PackageManagersObj,
-  ReactObj,
-  AngularObj,
-  VueObj,
-  HTMLModals,
-  CSSModals,
-  VCModals,
-  JSModals,
-  ReactModals,
-  AngularModals,
-  VueModals,
-}; // eslint-disable-line
+export { backendLanguages };

@@ -4,7 +4,7 @@ import "./pagesComponent.css";
 const LoaderComponent = () => {
   return (
     <div className="flex justify-center my-[3rem]">
-      <p class="loaderQ"></p>
+      <p className="loaderQ"></p>
     </div>
   );
 }
