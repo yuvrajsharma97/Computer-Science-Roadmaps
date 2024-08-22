@@ -11,9 +11,7 @@ const ModalsComponent = ({ modals }) => {
           key={modal.id}
           className="flex flex-col md:flex-row justify-evenly items-center w-full text-white">
           <button
-            className={`btn text-secondary hover:text-fourth w-2/6 my-2 hover:border-fourth ${
-              themeModeDark ? "bg-cardbg2" : "bg-cardbg1"
-            }`}
+            className={"btn bg-yellow text-primary hover:text-fourth w-2/6 my-2 hover:border-fourth"}
             onClick={() => document.getElementById(modal.id).showModal()}>
             {modal.buttonText}
           </button>

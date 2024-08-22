@@ -25,13 +25,10 @@ const FrontendRoadmap = () => {
   };
 
   return (
-    <div
-      className={`items-center ${
-        themeModeDark ? "bg-primary text-white" : "bg-lightbg text-black"
-      }`}>
+    <div className={"items-center"}>
       {sections.map((section, index) => (
         <div key={index} className={`w-full ${section.paddingTop}`}>
-          <h1 className="text-3xl font-bold text-bright1 text-center">
+          <h1 className="text-3xl font-bold text-yellow text-center">
             {section.title}
           </h1>
           <RoadmapAccordian accordionData={section.accordionData} />
@@ -61,7 +58,7 @@ const FrontendRoadmap = () => {
       {showFrameworkRoadmap && (
         <>
           <div className="w-full pb-[5rem]">
-            <h1 className="text-3xl font-bold text-bright1 text-center">
+            <h1 className="text-3xl font-bold text-yellow text-center">
               {frameworkArray.title}
             </h1>
             <RoadmapAccordian accordionData={frameworkArray.accordionData} />

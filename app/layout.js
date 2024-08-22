@@ -2,6 +2,7 @@ import { AppContextWrapper } from "@/context/appcontextwrapper";
 import "./globals.css";
 import Navbar from "@/components/navbar/navbar";
 import Footer from "@/components/footer/footer";
+import styles from "./pages/style/styles";
 
 export const metadata = {
   title: "Computer Science Roadmaps",
@@ -12,24 +13,19 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <head>
-        <link rel="preconnect" href="https://fonts.googleapis.com" />
-        <link
-          rel="preconnect"
-          href="https://fonts.gstatic.com"
-          crossOrigin="true"
-        />
-        <link
-          href="https://fonts.googleapis.com/css2?family=Playwrite+GB+S:ital,wght@0,100..400;1,100..400&display=swap"
-          rel="stylesheet"
-        />
-      </head>
-
       <body>
         <AppContextWrapper>
-          <Navbar />
-          <main >{children}</main>
-          <Footer />
+          <div className="bg-primary w-full overflow-hidden">
+            <section className={` ${styles.flexCenter} h-24 `}>
+              <Navbar />
+            </section>
+            <section className={`bg-primary ${styles.flexStart}`}>
+              <main className={`${styles.boxWidth}`}>{children}</main>
+            </section>
+            <section>
+              <Footer />
+            </section>
+          </div>
         </AppContextWrapper>
       </body>
     </html>

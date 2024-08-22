@@ -8,13 +8,11 @@ const RoadmapCard = ({ RoadmapObject }) => {
   return (
     <Link
       href={`/pages/roadmaps/${RoadmapObject.link}`}
-      className={`items-center w-80 m-5 rounded-[2rem] px-2 border-2 hover:scale-90 transition-all ${
-        themeModeDark
-          ? "bg-cardbg2 border-bright2 text-white"
-          : "bg-cardbg1 border-bright1 text-black"
-      }`}>
-      <div className="p-6 text-primary">
-        <h2 className="text-lg font-bold ">{RoadmapObject.title}</h2>
+      className={
+        "w-80 m-5 px-2 hover:scale-110 transition-all text-center bg-[#ffe599] bg-opacity-20 backdrop-filter backdrop-blur-lg rounded-lg border border-yellow"
+      }>
+      <div className="p-6">
+        <h2 className="text-xl font-bold text-yellow">{RoadmapObject.title}</h2>
         <p className="mt-2 text-md">{RoadmapObject.description}</p>
       </div>
     </Link>

@@ -1,6 +1,6 @@
 "use client";
 import React, { useContext } from "react";
-import "../style/pages.css";
+import "../style/styles.css";
 import { AppContext } from "@/context/appcontextwrapper";
 
 const Contact = () => {

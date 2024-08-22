@@ -10,9 +10,9 @@ const RoadmapAccordian = ({ accordionData }) => {
         {accordionData.map((data, index) => (
           <div
             key={index}
-            className={`${
-              themeModeDark ? "bg-cardbg2" : "bg-cardbg1"
-            } collapse border border-fourth my-5 w-4/6 mx-auto text-primary`}>
+            className={
+              "collapse my-5 w-4/6 mx-auto text-white bg-[#ffe599] bg-opacity-20 backdrop-filter backdrop-blur-lg rounded-lg"
+            }>
             <input type="radio" name="my-accordion-1" />
             <div className="collapse-title text-lg font-medium text-center">
               <p>{data.title}</p>

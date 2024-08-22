@@ -6,7 +6,7 @@ import LoaderComponent from "@/components/pagesComponents/loaderComponent";
 import ModalsComponent from "@/components/pagesComponents/modalsComponent";
 import RoadmapAccordian from "@/components/pagesComponents/roadmapAccordian";
 
-const BackendRoadmap = () => {
+const BackendRoadmap = () => {  
   const { themeModeDark } = useContext(AppContext);
   const [showLoader, setShowLoader] = useState(false);
   const [showBackendFrameworks, setShowBackendFrameworks] = useState(false);
@@ -24,9 +24,7 @@ const BackendRoadmap = () => {
 
   return (
     <div
-      className={`h-full w-full ${
-        themeModeDark ? "bg-primary text-white" : "bg-lightbg text-black"
-      }`}>
+      className={"h-full w-full"}>
       <div className="flex justify-around w-full pt-[6rem] px-4 md:px-0">
         <h3 className="text-xl md:text-2xl font-bold text-bright2">
           To learn backend, you should pick a language to begin with. Here are
@@ -40,7 +38,7 @@ const BackendRoadmap = () => {
               key={index}
               className="w-full md:w-1/3 flex justify-center my-3 px-2">
               <button
-                className="btn bg-bright1 border-none text-white btn-wide"
+                className="btn border-none text-white btn-wide"
                 onClick={() => handleBackendLanguageClick(language)}>
                 {language.title}
               </button>
@@ -57,7 +55,7 @@ const BackendRoadmap = () => {
       {showBackendFrameworks && (
         <>
           <div className="w-full py-[5rem]">
-            <h1 className="text-3xl font-bold text-bright1 text-center">
+            <h1 className="text-3xl font-bold text-yellow text-center">
               {backendFrameworkArray.title}
             </h1>
             <RoadmapAccordian

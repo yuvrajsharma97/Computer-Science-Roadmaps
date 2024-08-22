@@ -1,93 +1,86 @@
 "use client";
-import React, { useContext, useEffect } from "react";
-import "../style/pages.css";
-import { AppContext } from "@/context/appcontextwrapper";
+import React from "react";
 import Image from "next/image";
-import AOS from "aos";
-import "aos/dist/aos.css";
-import Link from "next/link";
+import styles from "../style/styles";
+import "../style/styles.css";
+import { FaLaptopCode } from "react-icons/fa";
+import fill1 from "@/public/assets/fill1.png";
+import CustomLinkButton from "@/components/pagesComponents/linkButtonComponent";
 
 const HomePage = () => {
-  const { themeModeDark } = useContext(AppContext);
-  useEffect(() => {
-    AOS.init();
-  }, []);
-
   return (
     <React.Fragment>
-      <div className={themeModeDark ? "landingpageDark" : "landingpageLight"}>
-        <div className="flex flex-col md:flex-row justify-around items-center h-full">
-          <div data-aos="zoom-in" className="text-center md:text-left">
-            <h1 className="text-4xl md:text-6xl">Computer Science</h1>
-            <div className="mt-4 md:mt-[2rem] text-2xl flex flex-col md:flex-row justify-center md:justify-start">
-              <span className="text-4xl">is</span>
-              <span className="animation xs:text-4xl xs:mt-5 md:mt-0 md:text-4xl border-b-2 border-bright2">
-                <div className="first">
-                  <div>Vast</div>
-                </div>
-                <div className="second">
-                  <div>Confusing</div>
-                </div>
-                <div className="third">
-                  <div>Disperse</div>
-                </div>
-              </span>
-              <span className="text-3xl md:text-4xl xs:mt-3 md:mt-0  ">
-                but...
-              </span>
-            </div>
-          </div>
-          <div
-            data-aos="zoom-in"
-            className="mt-6 md:mt-0 hidden md:inline-block">
-            <Image
-              src="/assets/heronobg.gif"
-              alt="Hero Image"
-              width={400}
-              height={150}
-              className="shadow-lg bg-[#E0EAFC] rounded-lg md:w-500 md:h-300"
-              layout="intrinsic"
-            />
-          </div>
-        </div>
-      </div>
-      <div
-        className={`w-full flex justify-around xs:bg-local md:bg-fixed bg-cover py-[3rem] ${
-          themeModeDark
-            ? " xs:bg-darkMobileBg md:bg-darkDesktopBg text-white"
-            : "xs:bg-lightMobileBg md:bg-lightDesktopBg text-black"
-        }`}>
+      <section className={`flex md:flex-row flex-col ${styles.paddingY}`}>
         <div
-          data-aos="zoom-in"
-          className={`w-5/6 shadow-lg rounded-md p-6 ${
-            themeModeDark ? "glassEffectDark" : "glassEffectWhite"
-          }`}>
-          <h1 className="text-3xl font-bold mb-6 text-center">We can help</h1>
-          <div className="text-lg">
-            <p className="my-5">
-              If you are a student or a professional interested in the field of
-              computer science, this is a one-stop destination for you. We
-              provide you with the best resources to help you learn and grow in
-              the field of computer science.
-            </p>
-            <p className="my-5">
-              There are a lot of pathways in computer science, and it can be a
-              bit confusing to choose the right one. We can help you choose the
-              right pathway.
-            </p>
-            <p className="my-5">
-              Explore these pathways and find the one that suits you the best.
-              Just fill a simple form and we will help you choose the right
-              pathway.
+          className={`flex-1 ${styles.flexStart} flex-col xl:px-0 sm:px-16 px-6 order-2 md:order-1`}>
+          <div className="flex flex-row items-center py-[6px] px-4 bg-tranparent-gradient1 rounded-[10px] mb-2">
+            <FaLaptopCode className="text-[#F7B318] text-[18px]" />
+            <p className={`${styles.paragraph} ml-5`}>
+              <span className="text-white">
+                {" "}
+                Ultimate guide for Computer Science
+              </span>
             </p>
           </div>
-          <div className="flex justify-center mt-[4rem] my-5">
-            <Link href={"/pages/explore"} className="btn bg-bright1 border-none text-white btn-wide">
-              EXPLORE PATHWAYS
-            </Link>
+
+          <div className="flex flex-row justify-between items-center w-full">
+            <h1 className="flex-1 font-poppins font-semibold ss:text-[60px] text-[40px] text-white ss:leading-[80px] leading-[60px]">
+              Computer Science is
+              <br className="block" />{" "}
+              <span className="text-gradient">Vast and Dispersed</span>{" "}
+            </h1>
+            <div className="ss:flex hidden md:mr-4 mr-0"></div>
           </div>
+
+          <h1 className="font-poppins font-semibold ss:text-[60px] text-[40px] text-white ss:leading-[80px] leading-[60px] w-full">
+            <span>but.....</span> <br />
+            We can help.
+          </h1>
+          <p className={`${styles.paragraph} max-w-[470px] mt-5`}>
+            Lost in the CS maze? We've got your back. Our roadmaps light the way
+            through the complex world of computer science, helping students and
+            pros find their path.
+          </p>
         </div>
-      </div>
+
+        <div
+          className={`flex-1 flex ${styles.flexCenter} md:my-0 my-10 relative order-1 md:order-2`}>
+          <Image
+            src={fill1}
+            alt="Fill1"
+            width={"100%"}
+            height={"100%"}
+            className=" relative z-[5]"
+          />
+
+          {/* gradient start */}
+          <div className="absolute z-[0] w-[40%] h-[35%] top-0 pink__gradient" />
+          <div className="absolute z-[1] w-[80%] h-[80%] rounded-full white__gradient bottom-40" />
+          <div className="absolute z-[0] w-[50%] h-[50%] right-20 bottom-20 blue__gradient" />
+          {/* gradient end */}
+        </div>
+
+        <div className={`ss:hidden ${styles.flexCenter}`}></div>
+      </section>
+      <section className="my-[8rem] md:my-[10rem]">
+        <div className="w-10/12 mx-auto my-10 p-6 bg-[#ffe599] bg-opacity-20 backdrop-filter backdrop-blur-lg rounded-lg border border-opacity-30 border-white text-center">
+          <h2 className="text-4xl font-bold text-bodyheading mb-4">
+            Explore Computer Science Roadmaps
+          </h2>
+          <p className="text-bodytext text-lg px-5">
+            If you are a student or a professional interested in the field of
+            computer science, this is a one-stop destination for you. We provide
+            you with the best resources to help you learn and grow in the field
+            of computer science. There are a lot of pathways in computer
+            science, and it can be a bit confusing to choose the right one. We
+            can help you choose the right pathway. Explore these pathways and
+            find the one that suits you the best. Just choose yes or no for a
+            couple of questions and we will help you choose the right pathway.
+          </p>
+
+          <CustomLinkButton text="Explore" href="/pages/explore" />
+        </div>
+      </section>
     </React.Fragment>
   );
 };

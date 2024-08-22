@@ -38,14 +38,17 @@ function QuestionsComponent({ Questions }) {
   return finished ? (
     <React.Fragment>
       <Confetti width={window.innerWidth} height={window.innerHeight} />
-    <div>
-      <p className="text-xl text-center my-5"> Looks like you are all done </p>
-      <p className="text-xl text-center my-5">
-        {" "}
-        Give us a moment to process all the information.{" "}
-      </p>
-      <LoaderComponent />
-    </div>
+      <div>
+        <p className="text-xl text-center my-5">
+          {" "}
+          Looks like you are all done{" "}
+        </p>
+        <p className="text-xl text-center my-5">
+          {" "}
+          Give us a moment to process all the information.{" "}
+        </p>
+        <LoaderComponent />
+      </div>
     </React.Fragment>
   ) : (
     <div>
@@ -60,14 +63,14 @@ function QuestionsComponent({ Questions }) {
           <div className="mt-5 mb-2">
             <span>
               <button
-                className="bg-bright1 text-white px-4 py-1 rounded-sm mx-5"
+                className="btn bg-[#F7B318] text-lg text-primary hover:bg-[#e6a514] border-none my-5 mx-2 px-[3rem]"
                 onClick={() =>
                   handleYes(Questions[currentQuestionIndex].field)
                 }>
                 Yes
               </button>
               <button
-                className="bg-bright1 text-white px-4 py-1 rounded-sm"
+                className="btn bg-[#F7B318] text-lg text-primary hover:bg-[#e6a514] border-none my-5 mx-2 px-[3rem]"
                 onClick={handleResponse}>
                 No
               </button>

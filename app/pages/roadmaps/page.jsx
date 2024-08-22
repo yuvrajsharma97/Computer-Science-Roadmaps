@@ -1,6 +1,6 @@
 "use client";
 import React, { useContext } from "react";
-import "../style/pages.css";
+import "../style/styles.css";
 import { AppContext } from "@/context/appcontextwrapper";
 import RoadmapCard from "@/components/pagesComponents/roadmapCardComponent";
 
@@ -29,15 +29,19 @@ const Roadmaps = () => {
 
   return (
     <React.Fragment>
-      <div
-        className={`min-h-screen flex items-center ${
-          themeModeDark ? "bg-primary text-white" : "bg-lightbg text-black"
-        }`}>
-        <div className="flex flex-wrap justify-around w-full my-[6rem]">
+      <div className={"flex items-center"}>
+        <div className="flex flex-wrap justify-around w-full my-[12rem]">
           {RoadmapObject.map((roadmap, index) => (
             <RoadmapCard key={index} RoadmapObject={roadmap} />
           ))}
         </div>
+      </div>
+      <div className="w-full flex justify-center mb-[5rem]">
+        <h3 className="w-10/12 text-lg md:text-xl text-bodytext">
+          This platform gets constant updates to ensure that you have the most
+          accurate and up-to-date information. New resources, guides, and
+          roadmaps are added regularly, so check back often to stay informed!
+        </h3>
       </div>
     </React.Fragment>
   );

@@ -7,10 +7,7 @@ const Footer = () => {
   const { themeModeDark } = useContext(AppContext);
 
   return (
-    <footer
-      className={`py-8 px-4 ${
-        themeModeDark ? "bg-black text-white" : "bg-fourth text-primary"
-      }`}>
+    <footer className={"py-8 px-4 bg-primary border-t-[3px] text-bodytext"}>
       <div className="w-full container mx-auto flex flex-col md:flex-row justify-between items-center">
         <div className="text-center md:text-left mb-4 md:mb-0">
           <h2 className="text-2xl font-bold">Computer Science Roadmaps</h2>
@@ -37,7 +34,7 @@ const Footer = () => {
         </div>
       </div>
       <div className="mt-6 text-center">
-        <p className="text-sm">
+        <p className="text-sm text-bodyheading">
           &copy; 2024 Computer Science Roadmaps. All rights reserved.
         </p>
       </div>

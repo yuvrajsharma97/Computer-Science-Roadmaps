@@ -5,7 +5,7 @@ import { AppContext } from "@/context/appcontextwrapper";
 import Questions from "@/jsonData/questions";
 import QuestionsComponent from "@/components/pagesComponents/questionsComponent";
 import LoaderComponent from "@/components/pagesComponents/loaderComponent";
-import Link from "next/link";
+import CustomLinkButton from "@/components/pagesComponents/linkButtonComponent";
 
 const Explore = () => {
   const { themeModeDark, questionsStatus, setQuestionsStatus, answersArray } =
@@ -25,14 +25,14 @@ const Explore = () => {
 
   return (
     <div
-      className={`w-full flex flex-col justify-around items-center min-h-screen ${
-        themeModeDark ? "bg-primary text-white" : "bg-lightbg text-black"
-      }`}>
+      className={
+        "w-10/12 mx-auto mt-8 mb-[8rem] md:mb-[10rem] p-6 bg-[#ffe599] bg-opacity-20 backdrop-filter backdrop-blur-lg rounded-lg border border-opacity-30 border-white text-center flex flex-col justify-around items-center min-h-screen"
+      }>
       <div className="w-10/12 my-[5rem]">
-        <h1 className="text-3xl font-bold text-bright1 text-center py-8">
+        <h1 className="text-3xl font-bold text-bodyheading text-center py-8">
           Explore Your Interests
         </h1>
-        <p className="text-lg text-center my-5">
+        <p className="text-lg text-center my-5 text-bodytext">
           Welcome! We are here to help you find a suitable path in the field of
           computer science. By answering the following questions, you will
           discover your top areas of interest with in computer science.
@@ -45,19 +45,19 @@ const Explore = () => {
           on this journey to find the best fit for you in the exciting world of
           technology!
         </p>
-        <p className="text-end my-4 text-sm">
-          <span className="text-bright2">* </span>
+        <p className="text-end my-4 text-sm text-bodyheading">
+          <span>* </span>
           If you want to re-take the test, please refresh the page.
         </p>
       </div>
 
-      <div className="border w-10/12 rounded-lg mb-[5rem]">
+      <div className="border w-full rounded-lg mb-[5rem]">
         <div className="flex justify-around">
           {!questionsStatus && answersArray.length === 0 && (
             <button
               className={`${
                 hideStart ? "hidden" : "block"
-              } btn bg-bright1 border-none text-white btn-wide my-5`}
+              } btn btn-wide bg-[#F7B318] text-lg text-primary hover:bg-[#e6a514] border-none my-[3rem]`}
               onClick={handeStart}>
               Start
             </button>
@@ -79,18 +79,15 @@ const Explore = () => {
                   {answersArray.map((answer, index) => (
                     <span
                       key={index}
-                      className="w-48 m-5 text-center bg-gradient-to-r from-bright2 to-bright1 font-bold rounded-sm p-4">
+                      className="w-48 m-5 text-center text-white bg-gradient-to-r from-[#707CFF] to-[#FA81E8] shadow-customPink font-bold rounded-md p-4">
                       {answer}
                     </span>
                   ))}
                 </div>
-                <div className="flex justify-around mt-[3rem] border-t ">
-                  <Link
-                    href={"/pages/roadmaps"}
-                    className="btn bg-bright1 border-none text-white btn-wide m-5">
-                    Browse Roadmaps
-                  </Link>
-                </div>
+                <CustomLinkButton
+                  href="/pages/roadmaps"
+                  text="Browse Roadmaps"
+                />
               </>
             )}
           </React.Fragment>
