@@ -18,8 +18,8 @@ const About = () => {
             <p className="text-lg mb-4">
               Welcome to Computer Science Roadmaps, your trusted resource for
               navigating the dynamic and expansive field of computer science.
-              Whether you're a high school student exploring your options or a
-              professional seeking to transition into tech, my platform is
+              Whether you&apos;re a high school student exploring your options
+              or a professional seeking to transition into tech, my platform is
               designed to empower you with the knowledge and tools necessary to
               make informed decisions about your educational and career path.
             </p>
@@ -70,9 +70,10 @@ const About = () => {
 
             <p className="text-lg">
               The platform is committed to your success in the field of computer
-              science. Whether you're at the beginning of your journey or aiming
-              to deepen your expertise in a specific area, Computer Science
-              Roadmaps is here to provide the support and direction you need.
+              science. Whether you&apos;re at the beginning of your journey or
+              aiming to deepen your expertise in a specific area, Computer
+              Science Roadmaps is here to provide the support and direction you
+              need.
             </p>
           </div>
         </div>

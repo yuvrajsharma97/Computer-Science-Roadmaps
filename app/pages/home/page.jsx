@@ -37,9 +37,9 @@ const HomePage = () => {
             We can help.
           </h1>
           <p className={`${styles.paragraph} max-w-[470px] mt-5`}>
-            Lost in the CS maze? We've got your back. Our roadmaps light the way
-            through the complex world of computer science, helping students and
-            pros find their path.
+            Lost in the CS maze? We&apos;ve got your back. Our roadmaps light
+            the way through the complex world of computer science, helping
+            students and pros find their path.
           </p>
         </div>
 
