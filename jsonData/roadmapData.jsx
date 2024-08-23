@@ -1372,7 +1372,7 @@ const frameworks = [
   },
 ];
 
-export { sections, frameworks }; 
+export { sections, frameworks };
 
 // Frontend Data for the Accordion and Modal Components End...
 
@@ -2288,16 +2288,23 @@ const JavaScriptBackendModals = [
     id: "my_modal_1",
     buttonText: "Resources",
     content: {
-      title: "Online resources for Learning Backend with JavaScript",
+      title: "Online Resources for Learning Backend with JavaScript",
       links: [
         {
-          href: "https://vuejs.org/",
-          text: "Vue Js Docs",
+          href: "https://nodejs.org/en/docs/",
+          text: "Node.js Official Documentation",
         },
-        { href: "https://www.w3schools.com/vue/", text: "W3 Schools" },
         {
-          href: "https://v2.scrimba.com/learn-vuejs-c020",
-          text: "Scrimba",
+          href: "https://expressjs.com/en/starter/installing.html",
+          text: "Express.js Official Documentation",
+        },
+        {
+          href: "https://www.mongodb.com/docs/",
+          text: "MongoDB Official Documentation",
+        },
+        {
+          href: "https://www.freecodecamp.org/learn/back-end-development-and-apis/",
+          text: "FreeCodeCamp - Back End Development and APIs",
         },
       ],
     },
@@ -2306,7 +2313,7 @@ const JavaScriptBackendModals = [
     id: "my_modal_2",
     buttonText: "Video Lecture",
     content: {
-      videoSrc: "https://www.youtube.com/embed/FXpIoQ_rT_c?si=U16OTo6EKV5va80y",
+      videoSrc: "https://www.youtube.com/embed/Oe421EPjeBE",
       videoTitle: "YouTube video player",
     },
   },
@@ -2317,16 +2324,19 @@ const JavaBackendModals = [
     id: "my_modal_3",
     buttonText: "Resources",
     content: {
-      title: "Online resources for Learning Backend with Java",
+      title: "Online Resources for Learning Backend with Java",
       links: [
         {
-          href: "https://vuejs.org/",
-          text: "Vue Js Docs",
+          href: "https://docs.oracle.com/en/java/",
+          text: "Oracle Java Documentation",
         },
-        { href: "https://www.w3schools.com/vue/", text: "W3 Schools" },
         {
-          href: "https://v2.scrimba.com/learn-vuejs-c020",
-          text: "Scrimba",
+          href: "https://spring.io/guides",
+          text: "Spring Framework Guides",
+        },
+        {
+          href: "https://www.baeldung.com/",
+          text: "Baeldung - Java and Spring Tutorials",
         },
       ],
     },
@@ -2335,7 +2345,7 @@ const JavaBackendModals = [
     id: "my_modal_4",
     buttonText: "Video Lecture",
     content: {
-      videoSrc: "https://www.youtube.com/embed/FXpIoQ_rT_c?si=U16OTo6EKV5va80y",
+      videoSrc: "https://www.youtube.com/embed/b1c3euh6g0U?si=IzHz7LY0nkKXs8c7",
       videoTitle: "YouTube video player",
     },
   },
@@ -2346,16 +2356,19 @@ const PythonBackendModals = [
     id: "my_modal_5",
     buttonText: "Resources",
     content: {
-      title: "Online resources for Learning Backend with Python",
+      title: "Online Resources for Learning Backend with Python",
       links: [
         {
-          href: "https://vuejs.org/",
-          text: "Vue Js Docs",
+          href: "https://docs.python.org/3/",
+          text: "Python Official Documentation",
         },
-        { href: "https://www.w3schools.com/vue/", text: "W3 Schools" },
         {
-          href: "https://v2.scrimba.com/learn-vuejs-c020",
-          text: "Scrimba",
+          href: "https://docs.djangoproject.com/en/stable/",
+          text: "Django Official Documentation",
+        },
+        {
+          href: "https://www.djangoproject.com/start/",
+          text: "Django Getting Started Guide",
         },
       ],
     },
@@ -2364,12 +2377,11 @@ const PythonBackendModals = [
     id: "my_modal_6",
     buttonText: "Video Lecture",
     content: {
-      videoSrc: "https://www.youtube.com/embed/FXpIoQ_rT_c?si=U16OTo6EKV5va80y",
+      videoSrc: "https://www.youtube.com/embed/F5mRW0jo-U4",
       videoTitle: "YouTube video player",
     },
   },
 ];
-
 
 const backendLanguages = [
   {
@@ -2390,3 +2402,607 @@ const backendLanguages = [
 ];
 
 export { backendLanguages };
+
+// Backend Data for the Accordion and Modal Components End...
+
+// Full Stack Data for the Accordion and Modal Components Start...
+
+const MERNStackRoadmap = [
+  {
+    title: "Prerequisites",
+    subtopics: [
+      "HTML/CSS Basics",
+      "JavaScript ES6+",
+      "Version Control with Git and GitHub",
+      "Basic Command Line Usage",
+    ],
+  },
+  {
+    title: "MongoDB",
+    subtopics: [
+      "Installation & Setup",
+      "MongoDB Shell Commands (CRUD Operations)",
+      "Collections and Documents",
+      "Schema Design and Data Modeling",
+      "Indexing for Performance",
+      "Aggregation Framework",
+      "Relationships (Embedding vs. Referencing)",
+      "Data Validation with Mongoose",
+      "MongoDB Atlas and Cloud Management",
+    ],
+  },
+  {
+    title: "Express.js",
+    subtopics: [
+      "Installation & Setup",
+      "Express Server Setup",
+      "Routing (GET, POST, PUT, DELETE)",
+      "Middleware Functions",
+      "Handling Requests and Responses",
+      "Error Handling",
+      "Serving Static Files",
+      "RESTful API Design Principles",
+      "Authentication & Authorization (JWT, OAuth)",
+      "Security Best Practices (Helmet, CORS)",
+      "Validation and Sanitization (Joi, express-validator)",
+      "Logging (Winston, Morgan)",
+      "API Rate Limiting and Throttling",
+    ],
+  },
+  {
+    title: "React.js",
+    subtopics: [
+      "Installation & Setup",
+      "JSX Syntax",
+      "Components (Functional and Class-Based)",
+      "Props and State",
+      "Event Handling",
+      "Lists and Keys",
+      "Conditional Rendering",
+      "Forms and Controlled Components",
+      "React Hooks (useState, useEffect, useContext, useReducer)",
+      "Context API for State Management",
+      "React Router for Navigation",
+      "Performance Optimization (React.memo, useMemo, useCallback)",
+      "Testing with Jest and React Testing Library",
+      "CSS-in-JS (Styled Components, Emotion)",
+      "State Management Libraries (Redux, Recoil)",
+      "Server-Side Rendering (Next.js)",
+      "TypeScript with React",
+    ],
+  },
+  {
+    title: "Node.js",
+    subtopics: [
+      "Installation & Setup",
+      "Node.js Module System (CommonJS and ES Modules)",
+      "Event-Driven Architecture",
+      "File System (fs module)",
+      "Streams and Buffers",
+      "HTTP Module for Creating a Server",
+      "Asynchronous Programming (Callbacks, Promises, Async/Await)",
+      "Building RESTful APIs with Express.js",
+      "Real-Time Communication with WebSockets (Socket.io)",
+      "Process Management (PM2)",
+      "Worker Threads for CPU-Intensive Tasks",
+      "Node.js Clusters for Scalability",
+      "Deploying Node.js Applications",
+      "Securing Node.js Applications",
+    ],
+  },
+  {
+    title: "Integrating the MERN Stack",
+    subtopics: [
+      "Connecting React Frontend to Express Backend",
+      "Using Axios or Fetch API for HTTP Requests",
+      "Implementing Authentication (JWT, OAuth)",
+      "State Management Across the Stack",
+      "Full-Stack Project Setup",
+      "CRUD Operations from React to MongoDB",
+      "Error Handling and Debugging Across the Stack",
+      "Deploying a Full-Stack Application",
+    ],
+  },
+  {
+    title: "Deployment & CI/CD",
+    subtopics: [
+      "Frontend Deployment (Netlify, Vercel, AWS S3)",
+      "Backend Deployment (Heroku, DigitalOcean, AWS EC2)",
+      "CI/CD Pipelines (GitHub Actions, CircleCI, Jenkins)",
+      "Dockerizing Applications",
+      "Monitoring and Logging in Production",
+      "HTTPS and Domain Setup",
+    ],
+  },
+];
+
+const MEANStackRoadmap = [
+  {
+    title: "Prerequisites",
+    subtopics: [
+      "HTML/CSS Basics",
+      "JavaScript ES6+",
+      "Version Control with Git and GitHub",
+      "Basic Command Line Usage",
+    ],
+  },
+  {
+    title: "MongoDB",
+    subtopics: [
+      "Installation & Setup",
+      "MongoDB Shell Commands (CRUD Operations)",
+      "Collections and Documents",
+      "Schema Design and Data Modeling",
+      "Indexing for Performance",
+      "Aggregation Framework",
+      "Relationships (Embedding vs. Referencing)",
+      "Data Validation with Mongoose",
+      "MongoDB Atlas and Cloud Management",
+    ],
+  },
+  {
+    title: "Express.js",
+    subtopics: [
+      "Installation & Setup",
+      "Express Server Setup",
+      "Routing (GET, POST, PUT, DELETE)",
+      "Middleware Functions",
+      "Handling Requests and Responses",
+      "Error Handling",
+      "Serving Static Files",
+      "RESTful API Design Principles",
+      "Authentication & Authorization (JWT, OAuth)",
+      "Security Best Practices (Helmet, CORS)",
+      "Validation and Sanitization (Joi, express-validator)",
+      "Logging (Winston, Morgan)",
+      "API Rate Limiting and Throttling",
+    ],
+  },
+  {
+    title: "Angular",
+    subtopics: [
+      "Installation & Setup with Angular CLI",
+      "Angular Architecture (Modules, Components, Services)",
+      "TypeScript Basics for Angular",
+      "Templates and Data Binding",
+      "Directives (ngIf, ngFor, ngClass, ngStyle)",
+      "Angular Forms (Template-Driven and Reactive Forms)",
+      "Component Interaction and Lifecycle Hooks",
+      "Dependency Injection",
+      "Routing and Navigation",
+      "HTTP Client Module for API Interaction",
+      "Services and Observables",
+      "State Management (NgRx, BehaviorSubject)",
+      "Angular Testing (Jasmine, Karma)",
+      "Angular Animations",
+      "Optimizing Angular Applications (Lazy Loading, AOT Compilation)",
+      "Angular Universal for Server-Side Rendering",
+    ],
+  },
+  {
+    title: "Node.js",
+    subtopics: [
+      "Installation & Setup",
+      "Node.js Module System (CommonJS and ES Modules)",
+      "Event-Driven Architecture",
+      "File System (fs module)",
+      "Streams and Buffers",
+      "HTTP Module for Creating a Server",
+      "Asynchronous Programming (Callbacks, Promises, Async/Await)",
+      "Building RESTful APIs with Express.js",
+      "Real-Time Communication with WebSockets (Socket.io)",
+      "Process Management (PM2)",
+      "Worker Threads for CPU-Intensive Tasks",
+      "Node.js Clusters for Scalability",
+      "Deploying Node.js Applications",
+      "Securing Node.js Applications",
+    ],
+  },
+  {
+    title: "Integrating the MEAN Stack",
+    subtopics: [
+      "Connecting Angular Frontend to Express Backend",
+      "Using Angular HTTP Client for API Requests",
+      "Implementing Authentication (JWT, OAuth)",
+      "State Management Across the Stack",
+      "Full-Stack Project Setup",
+      "CRUD Operations from Angular to MongoDB",
+      "Error Handling and Debugging Across the Stack",
+      "Deploying a Full-Stack Application",
+    ],
+  },
+  {
+    title: "Deployment & CI/CD",
+    subtopics: [
+      "Frontend Deployment (Netlify, Vercel, AWS S3)",
+      "Backend Deployment (Heroku, DigitalOcean, AWS EC2)",
+      "CI/CD Pipelines (GitHub Actions, CircleCI, Jenkins)",
+      "Dockerizing Applications",
+      "Monitoring and Logging in Production",
+      "HTTPS and Domain Setup",
+    ],
+  },
+];
+
+const JavaFullstackRoadmap = [
+  {
+    title: "Prerequisites",
+    subtopics: [
+      "HTML/CSS Basics",
+      "JavaScript ES6+",
+      "Basic Command Line Usage",
+      "Version Control with Git and GitHub",
+      "Basic Object-Oriented Programming Concepts",
+    ],
+  },
+  {
+    title: "Java Programming Language",
+    subtopics: [
+      "Installation & Setup (JDK, IDE like IntelliJ IDEA or Eclipse)",
+      "Java Syntax and Basics",
+      "Variables and Data Types",
+      "Control Structures (if-else, loops)",
+      "Methods and Functions",
+      "Object-Oriented Programming (Classes, Objects, Inheritance, Polymorphism)",
+      "Exception Handling",
+      "Java Collections Framework (List, Set, Map)",
+      "Streams and Lambda Expressions",
+      "File I/O",
+      "Multithreading and Concurrency",
+      "Java 8+ Features (Streams API, Optional, etc.)",
+    ],
+  },
+  {
+    title: "Spring Framework",
+    subtopics: [
+      "Introduction to Spring Framework",
+      "Spring Core (Inversion of Control, Dependency Injection)",
+      "Spring Boot Basics",
+      "Spring Boot Annotations",
+      "Spring MVC for Web Development",
+      "Building RESTful APIs with Spring Boot",
+      "Spring Data JPA for Database Interaction",
+      "Spring Security (Authentication & Authorization)",
+      "Spring Boot Testing (JUnit, Mockito)",
+      "Spring Boot Actuator for Monitoring",
+      "Spring Cloud Basics (Microservices)",
+      "Deploying Spring Boot Applications",
+    ],
+  },
+  {
+    title: "Frontend Development (JavaScript/TypeScript & Frameworks)",
+    subtopics: [
+      "JavaScript Fundamentals (ES6+)",
+      "TypeScript Basics",
+      "Introduction to Angular or React",
+      "Component-Based Architecture",
+      "Templates and Data Binding (Angular) / JSX (React)",
+      "Forms Handling",
+      "Routing and Navigation",
+      "State Management (NgRx for Angular / Redux for React)",
+      "HTTP Client Module (Angular) / Axios or Fetch API (React)",
+      "Frontend Testing (Jasmine/Karma for Angular, Jest for React)",
+      "Optimizing Frontend Applications",
+      "Building Responsive UIs with CSS and Bootstrap",
+    ],
+  },
+  {
+    title: "Database Management",
+    subtopics: [
+      "Introduction to Relational Databases",
+      "SQL Basics (CRUD Operations)",
+      "Database Design and Normalization",
+      "Connecting Java Applications to Databases (JDBC)",
+      "Using ORMs (Hibernate, JPA)",
+      "Handling Transactions",
+      "Database Migrations (Liquibase, Flyway)",
+      "Database Performance Tuning",
+      "NoSQL Databases (MongoDB basics)",
+    ],
+  },
+  {
+    title: "Integrating the Java Fullstack",
+    subtopics: [
+      "Building a Full-Stack Application with Spring Boot and Angular/React",
+      "Connecting Frontend with Backend",
+      "REST API Integration",
+      "Authentication & Authorization Across the Stack",
+      "Handling Forms and Validation",
+      "CRUD Operations Across the Stack",
+      "Error Handling and Debugging",
+      "Frontend and Backend State Management",
+    ],
+  },
+  {
+    title: "DevOps and Deployment",
+    subtopics: [
+      "Building and Packaging Java Applications (Maven/Gradle)",
+      "Containerization with Docker",
+      "CI/CD Pipelines (Jenkins, GitHub Actions)",
+      "Deployment to Cloud Platforms (AWS, Azure, Heroku)",
+      "Monitoring and Logging (ELK Stack, Prometheus, Grafana)",
+      "Securing Java Applications (HTTPS, SSL/TLS)",
+      "Versioning and Environment Management",
+    ],
+  },
+];
+
+const PythonDjangoFullstackRoadmap = [
+  {
+    title: "Prerequisites",
+    subtopics: [
+      "HTML/CSS Basics",
+      "JavaScript ES6+",
+      "Basic Command Line Usage",
+      "Version Control with Git and GitHub",
+      "Basic Python Programming",
+      "Object-Oriented Programming Concepts",
+    ],
+  },
+  {
+    title: "Python Programming",
+    subtopics: [
+      "Installation & Setup (Python, IDE like PyCharm or VSCode)",
+      "Python Syntax and Basics",
+      "Variables and Data Types",
+      "Control Structures (if-else, loops)",
+      "Functions and Lambda Expressions",
+      "Object-Oriented Programming (Classes, Inheritance, Polymorphism)",
+      "Exception Handling",
+      "Working with Modules and Packages",
+      "File Handling (File I/O)",
+      "Python Collections (List, Tuple, Set, Dictionary)",
+      "Comprehensions (List, Dict, Set)",
+      "Working with Virtual Environments",
+      "Python 3.x Features",
+    ],
+  },
+  {
+    title: "Django Framework",
+    subtopics: [
+      "Introduction to Django",
+      "Installation & Setup (Creating Django Project)",
+      "Understanding Django Project Structure",
+      "Django Models (ORM)",
+      "Django Views (Function-Based and Class-Based Views)",
+      "Django Templates (Template Language, Context, Template Inheritance)",
+      "Django Forms (Form Handling, Validation)",
+      "Django Admin Interface",
+      "Django URLs and Routing",
+      "Django Authentication System (Login, Signup, Password Management)",
+      "Static and Media Files Management",
+      "Django Signals",
+      "Django Middleware",
+      "REST API with Django REST Framework",
+      "Django Testing (Unit Tests, Integration Tests)",
+      "Deploying Django Applications",
+    ],
+  },
+  {
+    title: "Frontend Development (JavaScript/TypeScript & Frameworks)",
+    subtopics: [
+      "JavaScript Fundamentals (ES6+)",
+      "TypeScript Basics (Optional, if using TypeScript)",
+      "Introduction to Frontend Frameworks (React, Angular, or Vue.js)",
+      "Component-Based Architecture",
+      "Templates and Data Binding",
+      "Forms Handling",
+      "Routing and Navigation",
+      "State Management (Redux for React, Vuex for Vue.js, NgRx for Angular)",
+      "HTTP Requests (Fetch API, Axios)",
+      "Frontend Testing (Jest for React, Jasmine/Karma for Angular)",
+      "Optimizing Frontend Applications",
+      "Building Responsive UIs with CSS and Bootstrap",
+    ],
+  },
+  {
+    title: "Database Management",
+    subtopics: [
+      "Introduction to Relational Databases",
+      "SQL Basics (CRUD Operations)",
+      "Database Design and Normalization",
+      "Using Django ORM for Database Interaction",
+      "Handling Migrations in Django",
+      "Working with PostgreSQL (or other databases) in Django",
+      "Database Indexing and Optimization",
+      "Database Backup and Restoration",
+      "Using NoSQL Databases with Django (e.g., MongoDB)",
+    ],
+  },
+  {
+    title: "Integrating the Python Django Fullstack",
+    subtopics: [
+      "Building a Full-Stack Application with Django and a Frontend Framework",
+      "Connecting Frontend with Django Backend",
+      "REST API Integration with Django REST Framework",
+      "Authentication & Authorization Across the Stack",
+      "Handling Forms and Validation",
+      "CRUD Operations Across the Stack",
+      "Error Handling and Debugging",
+      "Frontend and Backend State Management",
+    ],
+  },
+  {
+    title: "DevOps and Deployment",
+    subtopics: [
+      "Building and Packaging Django Applications",
+      "Containerization with Docker",
+      "CI/CD Pipelines (GitHub Actions, CircleCI, Jenkins)",
+      "Deployment to Cloud Platforms (AWS, Azure, Heroku)",
+      "Monitoring and Logging (Sentry, ELK Stack)",
+      "Securing Django Applications (HTTPS, SSL/TLS, CSRF Protection)",
+      "Versioning and Environment Management",
+      "Scaling Django Applications (Caching, Load Balancing)",
+    ],
+  },
+];
+
+const MERNStackModals = [
+  {
+    id: "my_modal_1",
+    buttonText: "Resources",
+    content: {
+      title: "Online Resources for Learning the MERN Stack",
+      links: [
+        {
+          href: "https://nodejs.org/en/docs/",
+          text: "Node.js Official Documentation",
+        },
+        {
+          href: "https://expressjs.com/en/starter/installing.html",
+          text: "Express.js Official Documentation",
+        },
+        {
+          href: "https://reactjs.org/docs/getting-started.html",
+          text: "React Official Documentation",
+        },
+        {
+          href: "https://www.mongodb.com/docs/",
+          text: "MongoDB Official Documentation",
+        },
+        {
+          href: "https://www.freecodecamp.org/learn/back-end-development-and-apis/",
+          text: "FreeCodeCamp - Back End Development and APIs",
+        },
+      ],
+    },
+  },
+  {
+    id: "my_modal_2",
+    buttonText: "Video Lecture",
+    content: {
+      videoSrc: "https://www.youtube.com/embed/ktjafK4SgWM",
+      videoTitle: "YouTube video player",
+    },
+  },
+];
+
+const MEANStackModals = [
+  {
+    id: "my_modal_3",
+    buttonText: "Resources",
+    content: {
+      title: "Online Resources for Learning the MEAN Stack",
+      links: [
+        {
+          href: "https://nodejs.org/en/docs/",
+          text: "Node.js Official Documentation",
+        },
+        {
+          href: "https://expressjs.com/en/starter/installing.html",
+          text: "Express.js Official Documentation",
+        },
+        {
+          href: "https://angular.io/docs",
+          text: "Angular Official Documentation",
+        },
+        {
+          href: "https://www.mongodb.com/docs/",
+          text: "MongoDB Official Documentation",
+        },
+      ],
+    },
+  },
+  {
+    id: "my_modal_4",
+    buttonText: "Video Lecture",
+    content: {
+      videoSrc: "https://www.youtube.com/embed/1tRLveSyNz8",
+      videoTitle: "YouTube video playera",
+    },
+  },
+];
+
+const JavaFullstackModals = [
+  {
+    id: "my_modal_5",
+    buttonText: "Resources",
+    content: {
+      title: "Online Resources for Learning Java Fullstack Development",
+      links: [
+        {
+          href: "https://docs.oracle.com/en/java/",
+          text: "Oracle Java Documentation",
+        },
+        {
+          href: "https://spring.io/guides",
+          text: "Spring Framework Guides",
+        },
+        {
+          href: "https://www.baeldung.com/",
+          text: "Baeldung - Java and Spring Tutorials",
+        },
+      ],
+    },
+  },
+  {
+    id: "my_modal_6",
+    buttonText: "Video Lecture",
+    content: {
+      videoSrc: "https://www.youtube.com/embed/r4EqfjMsP48?si=Fi9TMckmBh2jCjeE",
+      videoTitle: "YouTube video player",
+    },
+  },
+];
+
+const PythonDjangoFullstackModals = [
+  {
+    id: "my_modal_7",
+    buttonText: "Resources",
+    content: {
+      title:
+        "Online Resources for Learning Python Django Fullstack Development",
+      links: [
+        {
+          href: "https://docs.python.org/3/",
+          text: "Python Official Documentation",
+        },
+        {
+          href: "https://docs.djangoproject.com/en/stable/",
+          text: "Django Official Documentation",
+        },
+        {
+          href: "https://www.djangoproject.com/start/",
+          text: "Django Getting Started Guide",
+        },
+        {
+          href: "https://realpython.com/tutorials/django/",
+          text: "Real Python - Django Tutorials",
+        }
+      ],
+    },
+  },
+  {
+    id: "my_modal_8",
+    buttonText: "Video Lecture",
+    content: {
+      videoSrc: "https://www.youtube.com/embed/F5mRW0jo-U4",
+      videoTitle: "YouTube video player",
+    },
+  },
+];
+
+const fullStackTracks = [
+  {
+    title: "MERN Stack",
+    accordionData: MERNStackRoadmap,
+    modals: MERNStackModals,
+  },
+  {
+    title: "MEAN Stack",
+    accordionData: MEANStackRoadmap,
+    modals: MEANStackModals,
+  },
+  {
+    title: "Java Fullstack",
+    accordionData: JavaFullstackRoadmap,
+    modals: JavaFullstackModals,
+  },
+  {
+    title: "Python Django Fullstack",
+    accordionData: PythonDjangoFullstackRoadmap,
+    modals: PythonDjangoFullstackModals,
+  },
+];
+
+export { fullStackTracks };

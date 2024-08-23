@@ -1,13 +1,11 @@
 "use client";
-import { AppContext } from "@/context/appcontextwrapper";
-import React, { useContext, useState } from "react";
+import React, { useState } from "react";
 import { backendLanguages } from "@/jsonData/roadmapData";
 import LoaderComponent from "@/components/pagesComponents/loaderComponent";
 import ModalsComponent from "@/components/pagesComponents/modalsComponent";
 import RoadmapAccordian from "@/components/pagesComponents/roadmapAccordian";
 
 const BackendRoadmap = () => {  
-  const { themeModeDark } = useContext(AppContext);
   const [showLoader, setShowLoader] = useState(false);
   const [showBackendFrameworks, setShowBackendFrameworks] = useState(false);
   const [backendFrameworkArray, setBackendFrameworkArray] = useState({});

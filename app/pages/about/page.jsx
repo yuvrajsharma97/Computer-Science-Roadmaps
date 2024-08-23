@@ -51,7 +51,7 @@ const About = () => {
             </p>
 
             <h2 className="text-2xl font-semibold mt-8 mb-4 text-bodyheading">
-              Why Choose Me?
+              Why Choose this platform?
             </h2>
             <ul className="list-disc list-inside text-lg mb-4">
               <li>
