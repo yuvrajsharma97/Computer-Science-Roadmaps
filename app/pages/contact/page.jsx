@@ -24,7 +24,12 @@ const Contact = () => {
     e.preventDefault();
 
     emailjs
-      .send("service_f6m2i1i", "emplate_53lpeka", formData, "4ciNb_E3sKaGw4sOj")
+      .send(
+        "service_f6m2i1i",
+        "template_rvem0gs",
+        formData,
+        "4ciNb_E3sKaGw4sOj"
+      )
       .then(
         (response) => {
           toast.success("Message sent successfully!");
@@ -45,8 +50,8 @@ const Contact = () => {
         Contact Us
       </h2>
       <p className="text-lg text-center my-5 text-bodytext">
-        Have a question or want to get in touch? Fill out the form below and
-        we will get back to you as soon as possible.
+        Have a question or want to get in touch? Fill out the form below and we
+        will get back to you as soon as possible.
       </p>
       <p className="text-lg text-center my-5 text-bodytext">
         We take your privacy and the security of your data very seriously. As
