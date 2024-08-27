@@ -44,6 +44,22 @@ const Contact = () => {
       <h2 className="text-3xl font-bold text-bodyheading text-center py-8">
         Contact Us
       </h2>
+      <p className="text-lg text-center my-5 text-bodytext">
+        Have a question or want to get in touch? Fill out the form below and
+        we'll get back to you as soon as possible.
+      </p>
+      <p className="text-lg text-center my-5 text-bodytext">
+        We take your privacy and the security of your data very seriously. As
+        part of our commitment to safeguarding your information, we ensure that
+        all personal data shared through this form is handled in compliance with
+        the General Data Protection Regulation (GDPR). Any information you
+        provide will be used solely for the purpose of responding to your query
+        and improving our services. We encourage you to review our privacy
+        policy, which outlines how we collect, store, and use your data. Should
+        you have any concerns or require further clarification, please do not
+        hesitate to contact us.
+      </p>
+
       <form onSubmit={handleSubmit} className="space-y-6 w-full max-w-lg">
         <div>
           <label

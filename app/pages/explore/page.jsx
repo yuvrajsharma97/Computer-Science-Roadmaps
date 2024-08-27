@@ -1,6 +1,5 @@
 "use client";
-
-import React, { useContext, useEffect, useState } from "react";
+import React, { useContext, useState } from "react";
 import { AppContext } from "@/context/appcontextwrapper";
 import Questions from "@/jsonData/questions";
 import QuestionsComponent from "@/components/pagesComponents/questionsComponent";
@@ -39,7 +38,7 @@ const Explore = () => {
         </p>
         <p className="text-lg text-center">
           Please note that this is a comprehensive form, and it might take some
-          time to complete as it has total of 42 questions. However, by the end
+          time to complete as it has total of 9 questions. However, by the end
           of it, you will have a clearer understanding of your interests and be
           more confident in choosing your career pathway. Let&apos;s get started
           on this journey to find the best fit for you in the exciting world of
@@ -68,7 +67,7 @@ const Explore = () => {
           <QuestionsComponent Questions={Questions} />
         ) : (
           <React.Fragment>
-            {answersArray.length > 0 && (
+            {(answersArray[0] !== "NA" && answersArray.length !== 0) && (
               <>
                 {" "}
                 <p className="text-xl text-center my-5">
@@ -89,6 +88,19 @@ const Explore = () => {
                   text="Browse Roadmaps"
                 />
               </>
+            )}
+            {answersArray[0] === "NA" && (
+              <React.Fragment>
+                <p className="text-xl text-center my-5">
+                  Looks like you could not find your interest. Please browse the
+                  roadmaps to find your interest.
+                </p>
+
+                <CustomLinkButton
+                  href="/pages/roadmaps"
+                  text="Browse Roadmaps"
+                />
+              </React.Fragment>
             )}
           </React.Fragment>
         )}

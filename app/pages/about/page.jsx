@@ -1,6 +1,6 @@
 import React from "react";
 import Image from "next/image";
-import aboutImage from "@/public/assets/about-image.jpg"; // Replace with your image path
+import aboutImage from "@/public/assets/about-image.jpg";
 
 const About = () => {
   return (

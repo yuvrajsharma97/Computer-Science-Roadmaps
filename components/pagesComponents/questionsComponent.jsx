@@ -5,26 +5,27 @@ import LoaderComponent from "./loaderComponent";
 import Confetti from "react-confetti";
 
 function QuestionsComponent({ Questions }) {
-  // State to keep track of the current question index
   const [currentQuestionIndex, setCurrentQuestionIndex] = useState(0);
-  const {
-    answersArray,
-    setAnswersArray,
-    setQuestionsStatus,
-    setIsExploding,
-  } = useContext(AppContext);
+  const { answersArray, setAnswersArray, setQuestionsStatus } =
+    useContext(AppContext);
   const [finished, setFinished] = useState(false);
 
-  const handleResponse = () => {
-    if (currentQuestionIndex < Questions.length - 1) {
-      setCurrentQuestionIndex(currentQuestionIndex + 1);
-    } else {
-      setFinished(true);
-      setTimeout(() => {
-        setQuestionsStatus(false);
-      }, 6000);
-    }
-  };
+ const handleResponse = () => {
+   if (currentQuestionIndex < Questions.length - 1) {
+     setCurrentQuestionIndex((prevIndex) => prevIndex + 1);
+     return;
+   }
+
+   if (answersArray.length === 0) {
+     answersArray[0] = "NA";
+   }
+
+   setFinished(true);
+   setTimeout(() => {
+     setQuestionsStatus(false);
+     console.log(answersArray);
+   }, 6000);
+ };
 
   const handleYes = (string) => {
     if (answersArray.includes(string)) {

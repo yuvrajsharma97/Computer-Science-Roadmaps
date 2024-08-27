@@ -26,29 +26,17 @@
 .text-gradient {
   background: radial-gradient(
     64.18% 64.18% at 71.16% 35.69%,
-    #fff5cc 0.89%,   /* lightest shade, similar to #def9fa */
-    #ffe599 17.23%,  /* similar to #bef3f5 */
-    #ffd966 42.04%,  /* similar to #9dedf0 */
-    #ffcc33 55.12%,  /* similar to #7de7eb */
-    #ffbf00 71.54%,  /* similar to #5ce1e6 */
-    #F7B318 100%     /* final color, replacing #33bbcf */
-);
+    #fff5cc 0.89%,
+    /* lightest shade, similar to #def9fa */ #ffe599 17.23%,
+    /* similar to #bef3f5 */ #ffd966 42.04%,
+    /* similar to #9dedf0 */ #ffcc33 55.12%,
+    /* similar to #7de7eb */ #ffbf00 71.54%,
+    /* similar to #5ce1e6 */ #f7b318 100% /* final color, replacing #33bbcf */
+  );
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
   text-fill-color: transparent;
-}
-
-.bg-blue-gradient {
-  background: linear-gradient(
-     157.81deg,
-    #fff5cc -43.27%,  /* lightest yellow, replacing #def9fa */
-    #ffe599 -21.24%,  /* light yellow, replacing #bef3f5 */
-    #ffd966 12.19%,   /* yellow, replacing #9dedf0 */
-    #ffcc33 29.82%,   /* deeper yellow, replacing #7de7eb */
-    #ffbf00 51.94%,   /* golden yellow, replacing #5ce1e6 */
-    #F7B318 90.29%  
-  );
 }
 
 .bg-black-gradient {
@@ -60,29 +48,8 @@
   );
 }
 
-.bg-black-gradient-2 {
-  background: linear-gradient(
-    -168.39deg,
-    #ffffff -278.56%,
-    #6d6d6d -78.47%,
-    #11101d 91.61%
-  );
-}
-
-.bg-gray-gradient {
-  background: linear-gradient(
-    153.47deg,
-    rgba(255, 255, 255, 0) -341.94%,
-    #14101d 95.11%
-  );
-}
-
 .bg-tranparent-gradient1 {
   background: linear-gradient(125.17deg, #272727 0%, #11101d 100%);
-}
-
-.box-shadow {
-  box-shadow: 0px 20px 100px -10px rgba(66, 71, 91, 0.1);
 }
 
 .sidebar {
@@ -112,23 +79,6 @@
   }
 }
 
-.feature-card:hover {
-  background: var(--black-gradient);
-  box-shadow: var(--card-shadow);
-}
-
-.feedback-container .feedback-card:last-child {
-  margin-right: 0px;
-}
-
-.feedback-card {
-  background: transparent;
-}
-
-.feedback-card:hover {
-  background: var(--black-gradient);
-}
-
 .blue__gradient {
   background: linear-gradient(180deg, rgba(188, 165, 255, 0) 0%, #214d76 100%);
   filter: blur(123px);
@@ -145,5 +95,5 @@
 }
 
 .parallax {
-          background-attachment: fixed;
-        }
+  background-attachment: fixed;
+}
