@@ -46,7 +46,7 @@ const Contact = () => {
       </h2>
       <p className="text-lg text-center my-5 text-bodytext">
         Have a question or want to get in touch? Fill out the form below and
-        we'll get back to you as soon as possible.
+        we will get back to you as soon as possible.
       </p>
       <p className="text-lg text-center my-5 text-bodytext">
         We take your privacy and the security of your data very seriously. As
