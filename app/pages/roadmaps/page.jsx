@@ -1,11 +1,9 @@
 "use client";
-import React, { useContext } from "react";
+import React from "react";
 import "../style/styles.css";
-import { AppContext } from "@/context/appcontextwrapper";
 import RoadmapCard from "@/components/pagesComponents/roadmapCardComponent";
 
 const Roadmaps = () => {
-  const { themeModeDark } = useContext(AppContext);
   const RoadmapObject = [
     {
       title: "Frontend Roadmap",

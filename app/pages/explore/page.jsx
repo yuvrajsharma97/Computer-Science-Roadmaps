@@ -7,7 +7,7 @@ import LoaderComponent from "@/components/pagesComponents/loaderComponent";
 import CustomLinkButton from "@/components/pagesComponents/linkButtonComponent";
 
 const Explore = () => {
-  const { themeModeDark, questionsStatus, setQuestionsStatus, answersArray } =
+  const { questionsStatus, setQuestionsStatus, answersArray } =
     useContext(AppContext);
   const [loader, setLoader] = useState(false);
   const [hideStart, setHideStart] = useState(false);

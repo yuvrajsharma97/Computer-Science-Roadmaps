@@ -1,10 +1,7 @@
 import Link from "next/link";
-import React, { useContext } from "react";
-import { AppContext } from "@/context/appcontextwrapper";
+import React from "react";
 
 const RoadmapCard = ({ RoadmapObject }) => {
-  const { themeModeDark } = useContext(AppContext);
-
   return (
     <Link
       href={`/pages/roadmaps/${RoadmapObject.link}`}

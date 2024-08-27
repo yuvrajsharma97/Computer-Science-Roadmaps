@@ -1,8 +1,6 @@
-import { AppContext } from "@/context/appcontextwrapper";
-import React, { useContext } from "react";
+import React from "react";
 
 const RoadmapAccordian = ({ accordionData }) => {
-  const { themeModeDark } = useContext(AppContext);
 
   return (
     <React.Fragment>
